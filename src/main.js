@@ -118,7 +118,7 @@ function changeVerbBoxFontColor(color) {
 function loadNewWord(wordList) {
 	let word = pickRandomWord(wordList);
 	updateCurrentWord(word);
-	changeVerbBoxFontColor("rgb(232, 232, 232)");
+	changeVerbBoxFontColor("rgb(244, 226, 197)");
 	return word;
 }
 

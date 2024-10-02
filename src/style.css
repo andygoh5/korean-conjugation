@@ -4,9 +4,9 @@ html {
 }
 
 body {
-	background: rgb(34, 34, 31);
-	--whiteTextColor: rgb(232, 232, 232);
-	margin: 0;
+	--whiteTextColor: #EFD6AC;
+	background-color: #183A37;
+	margin: 50;
 }
 
 h1 {
@@ -79,13 +79,13 @@ input[type="radio"] + label {
 }
 
 #top-container {
-	margin: 0.6rem;
+	margin: 1.5rem 1rem;
 	border-radius: 0.64rem;
 	padding: 0.6rem;
 	padding-top: 0.35rem;
 	padding-bottom: 0.35rem;
 	box-shadow: 0.3rem 0.3rem 0.36rem rgb(28, 28, 28);
-	background: rgb(44, 43, 41);
+	background: #1a403d;
 }
 
 #streak-container:after,
