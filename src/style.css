@@ -6,7 +6,7 @@ html {
 body {
 	--whiteTextColor: #EFD6AC;
 	background-color: #183A37;
-	margin: 50;
+	margin-top: 2.5rem;
 }
 
 h1 {
@@ -79,7 +79,7 @@ input[type="radio"] + label {
 }
 
 #top-container {
-	margin: 1.5rem 1rem;
+	margin: 0.8rem;
 	border-radius: 0.64rem;
 	padding: 0.6rem;
 	padding-top: 0.35rem;

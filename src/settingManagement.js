@@ -113,9 +113,9 @@ export function optionsMenuInit() {
 		input.addEventListener("click", showHideAdjectiveVariationOptions);
 	}
 
-	document
-		.getElementById("furigana-checkbox")
-		.addEventListener("click", showHideFuriganaSubOptions);
+	// document
+	// 	.getElementById("furigana-checkbox")
+	// 	.addEventListener("click", showHideFuriganaSubOptions);
 	document
 		.getElementById("translation-checkbox")
 		.addEventListener("click", showHideTranslationSubOptions);
@@ -123,14 +123,14 @@ export function optionsMenuInit() {
 	document
 		.getElementById("verbs-checkbox")
 		.addEventListener("click", verbAndAdjCheckError);
-	document
-		.getElementById("adjectives-checkbox")
-		.addEventListener("click", verbAndAdjCheckError);
+	// document
+	// 	.getElementById("adjectives-checkbox")
+	// 	.addEventListener("click", verbAndAdjCheckError);
 
 	// top level errors
 	const optionsView = document.getElementById("options-view");
 	optionsView.addEventListener("click", verbPresAffPlainCheckError);
-	optionsView.addEventListener("click", adjPresAffPlainCheckError);
+	// optionsView.addEventListener("click", adjPresAffPlainCheckError);
 }
 
 function checkToEnableBackButton() {
@@ -211,10 +211,10 @@ function verbAndAdjCheckError() {
 		document.getElementById("verb-options-container"),
 		!inputs[0].checked
 	);
-	toggleDisplayNone(
-		document.getElementById("adjective-options-container"),
-		!inputs[1].checked
-	);
+	// toggleDisplayNone(
+	// 	document.getElementById("adjective-options-container"),
+	// 	!inputs[1].checked
+	// );
 	let errorElement = document.getElementById("top-must-choose");
 
 	checkInputsAndToggleError(
@@ -620,11 +620,11 @@ export function selectCheckboxesInUi(settings) {
 		input.checked = settings[input.name];
 	}
 
-	selectConditionalUiRadio(
-		settings.furiganaTiming,
-		"furigana-always-radio",
-		"furigana-after-radio"
-	);
+	// selectConditionalUiRadio(
+	// 	settings.furiganaTiming,
+	// 	"furigana-always-radio",
+	// 	"furigana-after-radio"
+	// );
 	selectConditionalUiRadio(
 		settings.translationTiming,
 		"translation-always-radio",
@@ -649,9 +649,9 @@ export function selectCheckboxesInUi(settings) {
 
 export function showHideOptionsAndCheckErrors() {
 	showHideVerbVariationOptions();
-	showHideAdjectiveVariationOptions();
+	// showHideAdjectiveVariationOptions();
 
-	showHideFuriganaSubOptions();
+	// showHideFuriganaSubOptions();
 	showHideTranslationSubOptions();
 
 	let optionsGroups = document.getElementsByClassName("options-group");
