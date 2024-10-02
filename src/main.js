@@ -264,14 +264,20 @@ function getAllConjugations(wordJSON) {
 	return allConjugations.flat();
 }
 
+function extractKoreanCharacters(text) {
+    // Use a regex to match only Korean Hangul characters (Unicode range \uAC00-\uD7A3)
+    return text.replace(/[^\uAC00-\uD7A3]/g, '');
+}
+
 function getAllKoreanConjugations(wordJSON) {
 	const allConjugations = [];
+	const word = extractKoreanCharacters(wordJSON.hangeul)
 
 	// PRESENT TENSE
 	// -- informal
 	allConjugations.push(
 		new Conjugation(
-			[conjugator.declarative_present_informal_low(wordJSON.hangeul)],	// valid answers
+			[conjugator.declarative_present_informal_low(word)],	// valid answers
 			CONJUGATION_TYPES.present,											// conjugation_types
 			true,																// affirmative
 			false,																// informal
@@ -280,7 +286,7 @@ function getAllKoreanConjugations(wordJSON) {
 	)
 	allConjugations.push(
 		new Conjugation(
-			[conjugator.declarative_present_informal_high(wordJSON.hangeul)],	// valid answers
+			[conjugator.declarative_present_informal_high(word)],	// valid answers
 			CONJUGATION_TYPES.present,											// conjugation_types
 			true,																// affirmative
 			false,																// informal
@@ -290,7 +296,7 @@ function getAllKoreanConjugations(wordJSON) {
 	// -- formal
 	allConjugations.push(
 		new Conjugation(
-			[conjugator.declarative_present_formal_low(wordJSON.hangeul)],	// valid answers
+			[conjugator.declarative_present_formal_low(word)],	// valid answers
 			CONJUGATION_TYPES.present,											// conjugation_types
 			true,																// affirmative
 			true,																// formal
@@ -299,7 +305,7 @@ function getAllKoreanConjugations(wordJSON) {
 	)
 	allConjugations.push(
 		new Conjugation(
-			[conjugator.declarative_present_formal_high(wordJSON.hangeul)],
+			[conjugator.declarative_present_formal_high(word)],
 			CONJUGATION_TYPES.present,
 			true,
 			true,
@@ -311,7 +317,7 @@ function getAllKoreanConjugations(wordJSON) {
 	// -- informal
 	allConjugations.push(
 		new Conjugation(
-			[conjugator.declarative_past_informal_low(wordJSON.hangeul)],		// valid answers
+			[conjugator.declarative_past_informal_low(word)],		// valid answers
 			CONJUGATION_TYPES.past,											// conjugation_types
 			true,																// affirmative
 			false,
@@ -320,7 +326,7 @@ function getAllKoreanConjugations(wordJSON) {
 	)
 	allConjugations.push(
 		new Conjugation(
-			[conjugator.declarative_past_informal_high(wordJSON.hangeul)],		// valid answers
+			[conjugator.declarative_past_informal_high(word)],		// valid answers
 			CONJUGATION_TYPES.past,											// conjugation_types
 			true,																// affirmative
 			false,
@@ -330,7 +336,7 @@ function getAllKoreanConjugations(wordJSON) {
 	// -- formal
 	allConjugations.push(
 		new Conjugation(
-			[conjugator.declarative_past_formal_low(wordJSON.hangeul)],
+			[conjugator.declarative_past_formal_low(word)],
 			CONJUGATION_TYPES.past,
 			true,
 			true,
@@ -339,7 +345,7 @@ function getAllKoreanConjugations(wordJSON) {
 	)
 	allConjugations.push(
 		new Conjugation(
-			[conjugator.declarative_past_formal_high(wordJSON.hangeul)],
+			[conjugator.declarative_past_formal_high(word)],
 			CONJUGATION_TYPES.past,
 			true,
 			true,
