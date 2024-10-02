@@ -1,5 +1,4 @@
 /node_modules
-/dist
 /hot-reload-temp
 /.parcel-cache
 .DS_Store
