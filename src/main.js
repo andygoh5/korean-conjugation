@@ -99,6 +99,12 @@ function conjugationInqueryFormatting(conjugation) {
 		newString += createInqueryText("Informal", "👪");
 	}
 
+	if (conjugation.polite === true) {
+		newString += createInqueryText("Polite", "👔");
+	} else if (conjugation.polite === false) {
+		newString += createInqueryText("Plain", "👪");
+	}
+
 	return newString;
 }
 
@@ -260,32 +266,99 @@ function getAllConjugations(wordJSON) {
 
 function getAllKoreanConjugations(wordJSON) {
 	const allConjugations = [];
+
+	// PRESENT TENSE
+	// -- informal
 	allConjugations.push(
 		new Conjugation(
 			[conjugator.declarative_present_informal_low(wordJSON.hangeul)],	// valid answers
 			CONJUGATION_TYPES.present,											// conjugation_types
 			true,																// affirmative
-			false																// formal
+			false,																// informal
+			false																// plain
 		)
 	)
 	allConjugations.push(
 		new Conjugation(
-			[conjugator.declarative_past_informal_low(wordJSON.hangeul)],
+			[conjugator.declarative_present_informal_high(wordJSON.hangeul)],	// valid answers
+			CONJUGATION_TYPES.present,											// conjugation_types
+			true,																// affirmative
+			false,																// informal
+			true																// polite
+		)
+	)
+	// -- formal
+	allConjugations.push(
+		new Conjugation(
+			[conjugator.declarative_present_formal_low(wordJSON.hangeul)],	// valid answers
+			CONJUGATION_TYPES.present,											// conjugation_types
+			true,																// affirmative
+			true,																// formal
+			false
+		)
+	)
+	allConjugations.push(
+		new Conjugation(
+			[conjugator.declarative_present_formal_high(wordJSON.hangeul)],
+			CONJUGATION_TYPES.present,
+			true,
+			true,
+			true
+		)
+	)
+
+	// PAST TENSE
+	// -- informal
+	allConjugations.push(
+		new Conjugation(
+			[conjugator.declarative_past_informal_low(wordJSON.hangeul)],		// valid answers
+			CONJUGATION_TYPES.past,											// conjugation_types
+			true,																// affirmative
+			false,
+			false// formal
+		)
+	)
+	allConjugations.push(
+		new Conjugation(
+			[conjugator.declarative_past_informal_high(wordJSON.hangeul)],		// valid answers
+			CONJUGATION_TYPES.past,											// conjugation_types
+			true,																// affirmative
+			false,
+			true
+		)
+	)
+	// -- formal
+	allConjugations.push(
+		new Conjugation(
+			[conjugator.declarative_past_formal_low(wordJSON.hangeul)],
 			CONJUGATION_TYPES.past,
+			true,
 			true,
 			false
 		)
 	)
+	allConjugations.push(
+		new Conjugation(
+			[conjugator.declarative_past_formal_high(wordJSON.hangeul)],
+			CONJUGATION_TYPES.past,
+			true,
+			true,
+			true
+		)
+	)
+
+
 	return allConjugations.flat();
 }
 
 class Conjugation {
 	// conjugationType is CONJUGATION_TYPES enum
-	constructor(validAnswers, conjugationType, affirmative, formal) {
+	constructor(validAnswers, conjugationType, affirmative, formal, polite) {
 		this.validAnswers = validAnswers;
 		this.type = conjugationType;
 		this.affirmative = affirmative;
 		this.formal = formal;
+		this.polite = polite
 	}
 }
 

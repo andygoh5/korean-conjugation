@@ -468,6 +468,12 @@ const questionRemoveFilters = {
 		verbpolite: function (word) {
 			return word.conjugation.polite !== true;
 		},
+		verbinformal: function (word) {
+			return word.conjugation.formal !== false;
+		},
+		verbformal: function (word) {
+			return word.conjugation.formal !== true;
+		},
 
 		verbu: function (word) {
 			return word.wordJSON.type != "u";
