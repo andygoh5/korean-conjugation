@@ -1,5 +1,5 @@
 # Korean Conjugation Practice
-A web app for practicing Korean verb and adjective conjugations with basic spaced repition.
+A web app for practicing Korean verb and adjective conjugations with basic spaced repetition.
 
 # About the code
 The website design code is based on https://github.com/baileysnyder/japanese-conjugation under GPL-3.0, and the Korean conjugation logic under `src/korean/` is from https://github.com/max-christian/korean_conjugation under AGPL-3.0
