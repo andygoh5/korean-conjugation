@@ -30,7 +30,32 @@ import {
 try {
     var conjugator = require('./korean/conjugator.js'),
         assert     = require('assert');
-} catch(e) {}
+} catch (e) { }
+
+const conjugator_functions = {
+	"declarative": {
+		"present": {
+			"informal": {
+				"plain": conjugator.declarative_present_informal_low,
+				"polite": conjugator.declarative_present_informal_high
+			}, 
+			"formal": {
+				"plain": conjugator.declarative_present_formal_low,
+				"polite": conjugator.declarative_present_formal_high
+			}
+		},
+		"past": {
+			"informal": {
+				"plain": conjugator.declarative_present_informal_low,
+				"polite": conjugator.declarative_present_informal_high
+			}, 
+			"formal": {
+				"plain": conjugator.declarative_present_formal_low,
+				"polite": conjugator.declarative_present_formal_high
+			}
+		}
+	}
+}
 
 const isTouch = "ontouchstart" in window || navigator.msMaxTouchPoints > 0;
 document.getElementById("press-any-key-text").textContent = isTouch
@@ -269,90 +294,55 @@ function extractKoreanCharacters(text) {
     return text.replace(/[^\uAC00-\uD7A3]/g, '');
 }
 
+function getKoreanConjugation(word, mood, tense, formality, politeness) {
+	const conjugation = conjugator_functions[mood][tense][formality][politeness](word)
+	
+	let type;
+	if (tense == "present") {
+		type = CONJUGATION_TYPES.present
+	} else {
+		type = CONJUGATION_TYPES.past
+	}
+
+	const formal = (formality == "formal")
+	
+	const polite = (politeness == "polite")
+
+	return new Conjugation(
+		[conjugation],
+		type,
+		true,
+		formal,
+		polite
+	)
+}
+
 function getAllKoreanConjugations(wordJSON) {
 	const allConjugations = [];
 	const word = extractKoreanCharacters(wordJSON.hangeul)
 
-	// PRESENT TENSE
-	// -- informal
-	allConjugations.push(
-		new Conjugation(
-			[conjugator.declarative_present_informal_low(word)],	// valid answers
-			CONJUGATION_TYPES.present,											// conjugation_types
-			true,																// affirmative
-			false,																// informal
-			false																// plain
-		)
-	)
-	allConjugations.push(
-		new Conjugation(
-			[conjugator.declarative_present_informal_high(word)],	// valid answers
-			CONJUGATION_TYPES.present,											// conjugation_types
-			true,																// affirmative
-			false,																// informal
-			true																// polite
-		)
-	)
-	// -- formal
-	allConjugations.push(
-		new Conjugation(
-			[conjugator.declarative_present_formal_low(word)],	// valid answers
-			CONJUGATION_TYPES.present,											// conjugation_types
-			true,																// affirmative
-			true,																// formal
-			false
-		)
-	)
-	allConjugations.push(
-		new Conjugation(
-			[conjugator.declarative_present_formal_high(word)],
-			CONJUGATION_TYPES.present,
-			true,
-			true,
-			true
-		)
-	)
+	const moods = ["declarative"];
+	const tenses = ["present", "past"]
+	const formalities = ["informal", "formal"]
+	const politeness = ["plain", "polite"]
 
-	// PAST TENSE
-	// -- informal
-	allConjugations.push(
-		new Conjugation(
-			[conjugator.declarative_past_informal_low(word)],		// valid answers
-			CONJUGATION_TYPES.past,											// conjugation_types
-			true,																// affirmative
-			false,
-			false// formal
-		)
-	)
-	allConjugations.push(
-		new Conjugation(
-			[conjugator.declarative_past_informal_high(word)],		// valid answers
-			CONJUGATION_TYPES.past,											// conjugation_types
-			true,																// affirmative
-			false,
-			true
-		)
-	)
-	// -- formal
-	allConjugations.push(
-		new Conjugation(
-			[conjugator.declarative_past_formal_low(word)],
-			CONJUGATION_TYPES.past,
-			true,
-			true,
-			false
-		)
-	)
-	allConjugations.push(
-		new Conjugation(
-			[conjugator.declarative_past_formal_high(word)],
-			CONJUGATION_TYPES.past,
-			true,
-			true,
-			true
-		)
-	)
-
+	for (const mood of moods) {
+		for (const tense of tenses) {
+			for (const formal of formalities) {
+				for (const polite of politeness) {
+					allConjugations.push(
+						getKoreanConjugation(
+							word,
+							mood,
+							tense,
+							formal,
+							polite
+						)
+					)
+				}
+			}
+		}
+	}
 
 	return allConjugations.flat();
 }
