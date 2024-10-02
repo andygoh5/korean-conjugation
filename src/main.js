@@ -294,8 +294,17 @@ function extractKoreanCharacters(text) {
     return text.replace(/[^\uAC00-\uD7A3]/g, '');
 }
 
-function getKoreanConjugation(word, mood, tense, formality, politeness) {
-	const conjugation = conjugator_functions[mood][tense][formality][politeness](word)
+function getNegation(word) {
+	return word.slice(0, -1) + "지 않다"
+}
+
+function getKoreanConjugation(word, mood, tense, affirmative, formality, politeness) {
+	const affirm = (affirmative == "affirmative")
+	let base_word = word
+	if (!affirm) {
+		base_word = getNegation(word)
+	}
+	const conjugation = conjugator_functions[mood][tense][formality][politeness](base_word)
 	
 	let type;
 	if (tense == "present") {
@@ -304,16 +313,12 @@ function getKoreanConjugation(word, mood, tense, formality, politeness) {
 		type = CONJUGATION_TYPES.past
 	}
 
-	const formal = (formality == "formal")
-	
-	const polite = (politeness == "polite")
-
 	return new Conjugation(
 		[conjugation],
 		type,
-		true,
-		formal,
-		polite
+		affirm,
+		(formality == "formal"),
+		(politeness == "polite")
 	)
 }
 
@@ -323,22 +328,26 @@ function getAllKoreanConjugations(wordJSON) {
 
 	const moods = ["declarative"];
 	const tenses = ["present", "past"]
+	const affirmatives = ["affirmative", "negative"]
 	const formalities = ["informal", "formal"]
 	const politeness = ["plain", "polite"]
 
 	for (const mood of moods) {
 		for (const tense of tenses) {
 			for (const formal of formalities) {
-				for (const polite of politeness) {
-					allConjugations.push(
-						getKoreanConjugation(
-							word,
-							mood,
-							tense,
-							formal,
-							polite
+				for (const affirmative of affirmatives) {
+					for (const polite of politeness) {
+						allConjugations.push(
+							getKoreanConjugation(
+								word,
+								mood,
+								tense,
+								affirmative,
+								formal,
+								polite
+							)
 						)
-					)
+					}
 				}
 			}
 		}
@@ -689,7 +698,6 @@ export class MaxScoreObject {
 // Stored in an array instead of object to make parsing faster. Upon reflection this was not worth it.
 function initApp() {
 	wordData = koreanWordData;
-	console.log(wordData)
 	new ConjugationApp([wordData.verbs, wordData.adjectives]);
 }
 
@@ -982,12 +990,9 @@ class ConjugationApp {
 		}
 
 		this.applySettingsUpdateWordList();
-		console.log(this.state.currentWordList)
 
 		this.state.currentWord = loadNewWord(this.state.currentWordList);
 		this.state.wordsRecentlySeenQueue = [];
-
-		console.log(this.state.currentWord)
 		
 		this.state.currentStreak0OnReset = false;
 		this.state.loadWordOnReset = false;
