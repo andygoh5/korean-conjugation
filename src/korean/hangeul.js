@@ -25,11 +25,19 @@ function Geulja(__value__) {
     }
 };
 
-with(Geulja.prototype = new String) {
-    toString = valueOf = function() {
-        return this.__value__
-    };
-}
+// with(Geulja.prototype = new String) {
+//     toString = valueOf = function() {
+//         return this.__value__
+//     };
+// }
+
+Geulja.prototype = new String();
+
+// Assign the methods directly to Geulja.prototype
+Geulja.prototype.toString = Geulja.prototype.valueOf = function() {
+    return this.__value__;
+};
+
 
 var hangeul = function() {
     this.Geulja = Geulja;
