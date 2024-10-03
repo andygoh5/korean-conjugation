@@ -1,12 +1,15 @@
 // vim: set ts=4 sw=4 expandtab
 // (C) 2010 Dan Bravender - licensed under the AGPL 3.0
 
-try {
-    var hangeul       = require('./hangeul'),
-        pronunciation = require('./pronunciation');
-} catch(e) {}
+// try {
+//     var hangeul       = require('./hangeul'),
+//         pronunciation = require('./pronunciation');
+// } catch(e) {}
 
-var conjugator = {};
+import { hangeul, Geulja } from "./hangeul.js"
+import pronunciation from "./pronunciation.js"
+
+export var conjugator = {};
 
 conjugator.no_padchim_rule = function(characters) {
     /* no_padchim_rule is a helper function for defining merges where a
@@ -133,7 +136,7 @@ conjugator.merge = function(x, y) {
     var response = null;
     conjugator.merge_rules.forEach(function(rule) {
         if (!response) {
-            output = rule(x, y);
+            let output = rule(x, y);
             if (output) {
                 conjugator.reasons.push((output[0] ? output[0] : '') + ' (' + x + ' + ' + y + ' -> ' + output[1] + ')');
                 response = output[1];
@@ -259,7 +262,7 @@ conjugator.base2 = function(infinitive, regular) {
     if (infinitive == '푸') {
         return '퍼';
     }
-    new_infinitive = infinitive;
+    let new_infinitive = infinitive;
     if (conjugator.is_h_irregular(infinitive, regular)) {
         new_infinitive = conjugator.merge(infinitive.substring(0, infinitive.length-1) +
                                           hangeul.join(hangeul.lead(infinitive.charAt(infinitive.length-1)),
@@ -268,6 +271,7 @@ conjugator.base2 = function(infinitive, regular) {
         conjugator.reasons.push('ㅎ irregular (' + infinitive + ' -> ' + new_infinitive + ')');
     } else if (conjugator.is_p_irregular(infinitive, regular)) {
         // only some verbs get ㅗ (highly irregular)
+        let new_vowel;
         if (infinitive in {'묻잡': true} ||
             infinitive.charAt(infinitive.length-1) in {'돕': true, '곱': true}) {
             new_vowel = 'ㅗ';
@@ -333,7 +337,7 @@ conjugator.declarative_present_informal_low = function(infinitive, regular, furt
         return '일러';
     }
     if (conjugator.is_l_euh_irregular(infinitive, regular)) {
-        new_base = infinitive.substring(0, infinitive.length-2) +
+        let new_base = infinitive.substring(0, infinitive.length-2) +
                    hangeul.join(hangeul.lead(infinitive[infinitive.length-2]),
                                 hangeul.vowel(infinitive[infinitive.length-2]),
                                 'ᆯ');
@@ -389,7 +393,7 @@ conjugator.declarative_present_formal_high = function(infinitive, regular) {
 conjugator.declarative_present_formal_high.conjugation = true;
 
 conjugator.past_base = function(infinitive, regular) {
-    ps = conjugator.declarative_present_informal_low(infinitive, regular, true);
+    let ps = conjugator.declarative_present_informal_low(infinitive, regular, true);
     if (hangeul.find_vowel_to_append(ps) == '아') {
         return conjugator.merge(ps, '았');
     } else {
@@ -582,7 +586,7 @@ conjugator.nominal_ing.conjugation = true;
 
 conjugator.conjugations = [];
 
-for (f in conjugator) {
+for (let f in conjugator) {
     if (f && conjugator[f].conjugation) {
         conjugator.conjugations.push(f);
     }
@@ -641,6 +645,8 @@ conjugator.each_conjugation = function(infinitive, regular, callback) {
         }
     }
 };
+
+
 
 // Export functions to node
 try {

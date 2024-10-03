@@ -27,9 +27,12 @@ import {
 	toggleBackgroundNone,
 } from "./utils.js";
 
-try {
-    var conjugator = require('./conjugator.js')
-} catch (e) { console.error("cannot load conjugator")}
+// try {
+//     var conjugator = require('./conjugator.js')
+// } catch (e) { console.error("cannot load conjugator")}
+
+import { conjugator } from "./conjugator.js";
+
 
 const conjugator_functions = {
 	"declarative": {
@@ -45,12 +48,12 @@ const conjugator_functions = {
 		},
 		"past": {
 			"informal": {
-				"plain": conjugator.declarative_present_informal_low,
-				"polite": conjugator.declarative_present_informal_high
+				"plain": conjugator.declarative_past_informal_low,
+				"polite": conjugator.declarative_past_informal_high
 			}, 
 			"formal": {
-				"plain": conjugator.declarative_present_formal_low,
-				"polite": conjugator.declarative_present_formal_high
+				"plain": conjugator.declarative_past_formal_low,
+				"polite": conjugator.declarative_past_formal_high
 			}
 		}
 	}
@@ -298,18 +301,19 @@ function getNegation(word) {
 }
 
 function getKoreanConjugation(word, mood, tense, affirmative, formality, politeness) {
-	const affirm = (affirmative == "affirmative")
-	let base_word = word
+	const affirm = (affirmative == "affirmative");
+	let base_word = word;
 	if (!affirm) {
 		base_word = getNegation(word)
 	}
-	const conjugation = conjugator_functions[mood][tense][formality][politeness](base_word)
+	let conjugator_function = conjugator_functions[mood][tense][formality][politeness];
+	const conjugation = conjugator_function(base_word);
 	
 	let type;
 	if (tense == "present") {
-		type = CONJUGATION_TYPES.present
+		type = CONJUGATION_TYPES.present;
 	} else {
-		type = CONJUGATION_TYPES.past
+		type = CONJUGATION_TYPES.past;
 	}
 
 	return new Conjugation(
@@ -318,7 +322,7 @@ function getKoreanConjugation(word, mood, tense, affirmative, formality, politen
 		affirm,
 		(formality == "formal"),
 		(politeness == "polite")
-	)
+	);
 }
 
 function getAllKoreanConjugations(wordJSON) {
@@ -696,7 +700,7 @@ export class MaxScoreObject {
 // Array index 0 = verbs, 1 = adjectives
 // Stored in an array instead of object to make parsing faster. Upon reflection this was not worth it.
 function initApp() {
-	wordData = koreanWordData;
+	let wordData = koreanWordData;
 	new ConjugationApp([wordData.verbs, wordData.adjectives]);
 }
 
