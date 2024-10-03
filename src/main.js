@@ -114,11 +114,11 @@ function conjugationInqueryFormatting(conjugation) {
 
 	// This used to also add "Affirmative" text when affirmative was true, but it was a little redundant.
 	// Now it only adds "Negative" text when affirmative is false.
-	if (conjugation.affirmative === false) {
-		newString += createInqueryText("Negative", "🚫");
-	} else {
-		newString += createInqueryText("Affirmative", "✅");
-	}
+	// if (conjugation.affirmative === false) {
+	// 	newString += createInqueryText("Negative", "🚫");
+	// } else {
+	// 	newString += createInqueryText("Affirmative", "✅");
+	// }
 
 	if (conjugation.formal === true) {
 		newString += createInqueryText("Formal", "👔");
@@ -129,7 +129,11 @@ function conjugationInqueryFormatting(conjugation) {
 	if (conjugation.polite === true) {
 		newString += createInqueryText("Polite", "👔");
 	} else if (conjugation.polite === false) {
-		newString += createInqueryText("Plain", "👪");
+		newString += createInqueryText("Impolite", "👪");
+	}
+
+	if (conjugation.polite === false && conjugation.formal == false) {
+		newString += createInqueryText("(Casual)", "")
 	}
 
 	return newString;
@@ -300,14 +304,9 @@ function getNegation(word) {
 	return word.slice(0, -1) + "지 않다"
 }
 
-function getKoreanConjugation(word, mood, tense, affirmative, formality, politeness) {
-	const affirm = (affirmative == "affirmative");
-	let base_word = word;
-	if (!affirm) {
-		base_word = getNegation(word)
-	}
+function getKoreanConjugation(word, mood, tense, formality, politeness) {
 	let conjugator_function = conjugator_functions[mood][tense][formality][politeness];
-	const conjugation = conjugator_function(base_word);
+	const conjugation = conjugator_function(word);
 	
 	let type;
 	if (tense == "present") {
@@ -319,7 +318,7 @@ function getKoreanConjugation(word, mood, tense, affirmative, formality, politen
 	return new Conjugation(
 		[conjugation],
 		type,
-		affirm,
+		true,
 		(formality == "formal"),
 		(politeness == "polite")
 	);
@@ -331,26 +330,23 @@ function getAllKoreanConjugations(wordJSON) {
 
 	const moods = ["declarative"];
 	const tenses = ["present", "past"]
-	const affirmatives = ["affirmative", "negative"]
 	const formalities = ["informal", "formal"]
 	const politeness = ["plain", "polite"]
 
 	for (const mood of moods) {
 		for (const tense of tenses) {
 			for (const formal of formalities) {
-				for (const affirmative of affirmatives) {
-					for (const polite of politeness) {
-						allConjugations.push(
-							getKoreanConjugation(
-								word,
-								mood,
-								tense,
-								affirmative,
-								formal,
-								polite
-							)
+				for (const polite of politeness) {
+					allConjugations.push(
+						getKoreanConjugation(
+							word,
+							mood,
+							tense,
+							formal,
+							polite
 						)
-					}
+					)
+				
 				}
 			}
 		}
