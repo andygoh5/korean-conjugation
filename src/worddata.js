@@ -84,7 +84,7 @@ export const koreanWordData = {
             "eng": "to take"
         },
         {
-            "hangeul": "걸이가다",
+            "hangeul": "걸어가다",
             "eng": "to walk to"
         },
         {
@@ -181,8 +181,6 @@ export const koreanWordData = {
         }
     ],
     "adjectives": [
-        { "hangeul": "いい", "type": "ira", "eng": "good" },
-        { "hangeul": "かっこいい", "type": "ira", "eng": "cool, handsome" }
     ]
 }
 
