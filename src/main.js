@@ -28,9 +28,8 @@ import {
 } from "./utils.js";
 
 try {
-    var conjugator = require('./korean/conjugator.js'),
-        assert     = require('assert');
-} catch (e) { }
+    var conjugator = require('./conjugator.js')
+} catch (e) { console.error("cannot load conjugator")}
 
 const conjugator_functions = {
 	"declarative": {
