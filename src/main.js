@@ -409,7 +409,6 @@ function pickRandomWord(wordList) {
 				if (random < wordList[i][j].probability) {
 					return wordList[i][j];
 				}
-				// console.log(random)
 				random -= wordList[i][j].probability;
 			}
 		}

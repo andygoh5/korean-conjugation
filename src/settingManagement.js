@@ -430,8 +430,6 @@ export function applyAllSettingsFilterWords(settings, completeWordList) {
 			}
 		}
 	}
-
-	console.log(currentWordList)
 	return currentWordList;
 }
 

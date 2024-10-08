@@ -552,14 +552,8 @@ screen and (min-width: 510px) {
 	}
 }
 
-#selectors {
-	display: block;
-	margin: 0 auto;
-	width: fit-content
-}
 
-td,
-th {
+.options-group td,th {
 	padding: 5px 10px;
 	border: 2px solid #04151f
 }
