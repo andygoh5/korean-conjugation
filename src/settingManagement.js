@@ -396,8 +396,8 @@ export function applyAllSettingsFilterWords(settings, completeWordList) {
 	const verbRegex = /^verb_.+/;
 	if (settings.verb !== false) {
 		// Copy all of the verbs over
-		currentWordList[0] = [...completeWordList[0]];
-		// currentWordList[0] = [];
+		// currentWordList[0] = [...completeWordList[0]];
+		currentWordList[0] = [];
 
 		let verbOptions = Object.keys(settings).filter((el) =>
 			verbRegex.test(el)
@@ -406,6 +406,7 @@ export function applyAllSettingsFilterWords(settings, completeWordList) {
 		// Filter out the verbs we don't want
 		for (let i = 0; i < verbOptions.length; i++) {
 			if (settings[verbOptions[i]] === true) {
+				// console.log(verbOptions[i])
 				currentWordList[0] = currentWordList[0].concat(completeWordList[0].filter(
 					questionRemoveFiltersController.verbs[verbOptions[i]]
 				));
@@ -430,6 +431,7 @@ export function applyAllSettingsFilterWords(settings, completeWordList) {
 			}
 		}
 	}
+	// console.log(currentWordList[0].length)
 	return currentWordList;
 }
 
