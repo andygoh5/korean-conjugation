@@ -562,3 +562,9 @@ td a,
 th a {
 	text-decoration: none
 }
+
+#example-explanation {
+	display: block;
+	text-align: center;
+	padding-bottom: 1rem;
+}
