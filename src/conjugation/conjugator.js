@@ -9,7 +9,7 @@
 import { hangeul, Geulja } from "./hangeul.js"
 import pronunciation from "./pronunciation.js"
 
-export var conjugator = {};
+var conjugator = {};
 
 conjugator.no_padchim_rule = function(characters) {
     /* no_padchim_rule is a helper function for defining merges where a
@@ -646,6 +646,30 @@ conjugator.each_conjugation = function(infinitive, regular, callback) {
     }
 };
 
+export var conjugator_functions = {
+	"declarative": {
+		"present": {
+			"informal": {
+				"plain": conjugator.declarative_present_informal_low,
+				"polite": conjugator.declarative_present_informal_high
+			}, 
+			"formal": {
+				"plain": conjugator.declarative_present_formal_low,
+				"polite": conjugator.declarative_present_formal_high
+			}
+		},
+		"past": {
+			"informal": {
+				"plain": conjugator.declarative_past_informal_low,
+				"polite": conjugator.declarative_past_informal_high
+			}, 
+			"formal": {
+				"plain": conjugator.declarative_past_formal_low,
+				"polite": conjugator.declarative_past_formal_high
+			}
+		}
+	}
+}
 
 
 // Export functions to node

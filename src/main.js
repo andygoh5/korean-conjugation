@@ -27,37 +27,7 @@ import {
 	toggleBackgroundNone,
 } from "./utils.js";
 
-// try {
-//     var conjugator = require('./conjugator.js')
-// } catch (e) { console.error("cannot load conjugator")}
-
-import { conjugator } from "./conjugator.js";
-
-
-const conjugator_functions = {
-	"declarative": {
-		"present": {
-			"informal": {
-				"plain": conjugator.declarative_present_informal_low,
-				"polite": conjugator.declarative_present_informal_high
-			}, 
-			"formal": {
-				"plain": conjugator.declarative_present_formal_low,
-				"polite": conjugator.declarative_present_formal_high
-			}
-		},
-		"past": {
-			"informal": {
-				"plain": conjugator.declarative_past_informal_low,
-				"polite": conjugator.declarative_past_informal_high
-			}, 
-			"formal": {
-				"plain": conjugator.declarative_past_formal_low,
-				"polite": conjugator.declarative_past_formal_high
-			}
-		}
-	}
-}
+import { conjugator_functions } from "./conjugation/conjugator.js";
 
 const isTouch = "ontouchstart" in window || navigator.msMaxTouchPoints > 0;
 document.getElementById("press-any-key-text").textContent = isTouch
@@ -71,20 +41,6 @@ const SCREENS = Object.freeze({
 	results: 1,
 	settings: 2,
 });
-
-function wordTypeToDisplayText(type) {
-	if (type == "u") {
-		return "う-verb";
-	} else if (type == "ru") {
-		return "る-verb";
-	} else if (type == "irv" || type == "ira") {
-		return "Irregular";
-	} else if (type == "i") {
-		return "い-adjective";
-	} else if (type == "na") {
-		return "な-adjective";
-	}
-}
 
 function conjugationInqueryFormatting(conjugation) {
 	let newString = "";
@@ -171,129 +127,6 @@ function updateCurrentWord(word) {
 		conjugationInqueryFormatting(word.conjugation);
 }
 
-function getConjugation(
-	wordJSON,
-	partOfSpeech,
-	conjugationType,
-	validBaseWordSpellings,
-	affirmative,
-	polite
-) {
-	const validConjugatedAnswers = [];
-	const conjugationFunction =
-		conjugationFunctions[partOfSpeech][conjugationType];
-
-	validBaseWordSpellings?.forEach((baseWord) => {
-		validConjugatedAnswers.push(
-			conjugationFunction(baseWord, wordJSON.type, affirmative, polite)
-		);
-	});
-
-	return new Conjugation(
-		// conjugationFunction may return a string or array, so flatten to get rid of nested arrays
-		validConjugatedAnswers.flat(),
-		conjugationType,
-		affirmative,
-		polite
-	);
-}
-
-function getAllConjugations(wordJSON) {
-	const allConjugations = [];
-	const partOfSpeech = getPartOfSpeech(wordJSON);
-
-	// Get all valid spellings for the base word
-	// For example ["あがる", "上がる", "上る"]
-	let validBaseWordSpellings = [
-		toHiragana(wordJSON.kanji),
-		toKanjiPlusHiragana(wordJSON.kanji),
-	];
-	if (wordJSON.altOkurigana?.length) {
-		validBaseWordSpellings = validBaseWordSpellings.concat(
-			wordJSON.altOkurigana
-		);
-	}
-
-	// Present and past have standard variations for verbs and adjectives
-	const typesWithStandardVariations = [
-		CONJUGATION_TYPES.present,
-		CONJUGATION_TYPES.past,
-	];
-
-	if (partOfSpeech === PARTS_OF_SPEECH.verb) {
-		typesWithStandardVariations.push(CONJUGATION_TYPES.passive);
-		typesWithStandardVariations.push(CONJUGATION_TYPES.causative);
-		// わかる does not have a potential form
-		if (toHiragana(wordJSON.kanji) !== "わかる") {
-			typesWithStandardVariations.push(CONJUGATION_TYPES.potential);
-		}
-	}
-
-	typesWithStandardVariations.forEach((conjugationType) => {
-		allConjugations.push(
-			getStandardVariationConjugations(
-				wordJSON,
-				partOfSpeech,
-				conjugationType,
-				validBaseWordSpellings
-			)
-		);
-	});
-
-	if (partOfSpeech === PARTS_OF_SPEECH.verb) {
-		// te
-		allConjugations.push(
-			getConjugation(
-				wordJSON,
-				partOfSpeech,
-				CONJUGATION_TYPES.te,
-				validBaseWordSpellings,
-				null,
-				null
-			)
-		);
-		// volitional
-		[true, false].forEach((polite) => {
-			allConjugations.push(
-				getConjugation(
-					wordJSON,
-					partOfSpeech,
-					CONJUGATION_TYPES.volitional,
-					validBaseWordSpellings,
-					null,
-					polite
-				)
-			);
-		});
-		// imperative
-		allConjugations.push(
-			getConjugation(
-				wordJSON,
-				partOfSpeech,
-				CONJUGATION_TYPES.imperative,
-				validBaseWordSpellings,
-				null,
-				null
-			)
-		);
-	} else if (partOfSpeech === PARTS_OF_SPEECH.adjective) {
-		// Add adverb
-		allConjugations.push(
-			getConjugation(
-				wordJSON,
-				partOfSpeech,
-				CONJUGATION_TYPES.adverb,
-				validBaseWordSpellings,
-				null,
-				null
-			)
-		);
-	}
-
-	// allConjugations contains either Conjugations or arrays of Conjugations.
-	// Flatten to make into one array.
-	return allConjugations.flat();
-}
 
 function extractKoreanCharacters(text) {
     // Use a regex to match only Korean Hangul characters (Unicode range \uAC00-\uD7A3)
