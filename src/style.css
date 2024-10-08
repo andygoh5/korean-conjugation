@@ -328,8 +328,8 @@ h2 {
 }
 
 #options-view {
-	padding-left: 0.73rem;
-	padding-right: 0.73rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 
 #options-form {
@@ -375,7 +375,7 @@ h2 {
 }
 
 .options-indent {
-	padding-left: 1.36rem;
+	padding-left: 0.5rem;
 }
 
 #back-button-container {
@@ -554,14 +554,11 @@ screen and (min-width: 510px) {
 
 
 .options-group td,th {
-	padding: 5px 10px;
-	border: 2px solid #04151f
+	padding: 0.25rem 0.5rem;
+	border: 2px solid #04151f;
+	font-size: 0.8em;
 }
 
-td a,
-th a {
-	text-decoration: none
-}
 
 #example-explanation {
 	display: block;
