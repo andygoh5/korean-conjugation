@@ -71,6 +71,13 @@ export const getDefaultAdditiveSettings = () => {
 		settings[input.name] = true;
 	}
 
+	const inputs = document
+		.getElementById("options-form")
+		.querySelectorAll('[type="checkbox"]');
+	for (const input of Array.from(inputs)) {
+		settings[input.name] = true;
+	}
+
 	// Set input radio values
 	settings["translationTiming"] = CONDITIONAL_UI_TIMINGS.always;
 	settings["furiganaTiming"] = CONDITIONAL_UI_TIMINGS.always;
@@ -403,10 +410,34 @@ export function applyAllSettingsFilterWords(settings, completeWordList) {
 			verbRegex.test(el)
 		);
 
+		let filters = 0;
+		for (let i = 0; i < verbOptions.length; i++) {
+			if (settings[verbOptions[i]] === true) {
+				filters += 1;
+			}
+		}
+
+		if (filters== 0) {
+			const inputs = document
+				.getElementById("options-form")
+				.querySelectorAll('[type="checkbox"]');
+			const default_settings = {};
+			for (const input of Array.from(inputs)) {
+				default_settings[input.name] = true;
+			}
+			settings = Object.assign(
+				settings,
+				default_settings
+			)
+			verbOptions = Object.keys(settings).filter((el) =>
+				verbRegex.test(el)
+			);
+		}
+
+
 		// Filter out the verbs we don't want
 		for (let i = 0; i < verbOptions.length; i++) {
 			if (settings[verbOptions[i]] === true) {
-				// console.log(verbOptions[i])
 				currentWordList[0] = currentWordList[0].concat(completeWordList[0].filter(
 					questionRemoveFiltersController.verbs[verbOptions[i]]
 				));
@@ -431,8 +462,7 @@ export function applyAllSettingsFilterWords(settings, completeWordList) {
 			}
 		}
 	}
-	// console.log(currentWordList[0].length)
-	return currentWordList;
+	return [currentWordList, settings];
 }
 
 // The input to these functions is a "Word" object defined in main.js.

@@ -415,6 +415,7 @@ function pickRandomWord(wordList) {
 		throw "no random word chosen";
 	} catch (err) {
 		console.error(err);
+		console.error("hello")
 		function getRandomInt(max) {
 			return Math.floor(Math.random() * max);
 		}
@@ -854,12 +855,13 @@ class ConjugationApp {
 	}
 
 	applySettingsUpdateWordList() {
-		const filteredWords = applyAllSettingsFilterWords(
+		const [filteredWords, settings] = applyAllSettingsFilterWords(
 			this.state.settings,
 			this.state.completeWordList
 		);
 		equalizeProbabilities(filteredWords);
 		this.state.currentWordList = filteredWords;
+		this.state.settings = settings;
 	}
 }
 
