@@ -32,6 +32,8 @@ export function removeNonConjugationSettings(settings) {
  */
 export const getDefaultSettings = () => {
 	// First set all checkboxes to true
+	// document.getElementById("options-form")
+	// 	.querySelectorAll('[type="checkbox"]').checked = true;
 	const inputs = document
 		.getElementById("options-form")
 		.querySelectorAll('[type="checkbox"]');
@@ -129,7 +131,7 @@ export function optionsMenuInit() {
 
 	// top level errors
 	const optionsView = document.getElementById("options-view");
-	optionsView.addEventListener("click", verbPresAffPlainCheckError);
+	// optionsView.addEventListener("click", verbPresAffPlainCheckError);
 	// optionsView.addEventListener("click", adjPresAffPlainCheckError);
 }
 
@@ -204,8 +206,8 @@ function optionsGroupCheckError(groupElement) {
 
 function verbAndAdjCheckError() {
 	let inputs = [
-		document.querySelector('input[name="verb"]'),
-		document.querySelector('input[name="adjective"]'),
+		document.querySelector('input[name="verb"]')
+		// document.querySelector('input[name="adjective"]'),
 	];
 	toggleDisplayNone(
 		document.getElementById("verb-options-container"),
@@ -227,17 +229,22 @@ function verbAndAdjCheckError() {
 
 // Relies on naming between verb and adjective checkboxes being parallel in the html
 function areOnlyPresAffPlainChecked(partOfSpeech) {
+	// const allInputsToValidate = Array.from(
+	// 	document
+	// 		.getElementById(`${partOfSpeech}-conjugation-type-group`)
+	// 		.getElementsByTagName("input")
+	// ).concat(
+	// 	Array.from(
+	// 		document
+	// 			.getElementById(`${partOfSpeech}-variations-container`)
+	// 			.getElementsByTagName("input")
+	// 	)
+	// );
 	const allInputsToValidate = Array.from(
-		document
-			.getElementById(`${partOfSpeech}-conjugation-type-group`)
-			.getElementsByTagName("input")
-	).concat(
-		Array.from(
 			document
 				.getElementById(`${partOfSpeech}-variations-container`)
 				.getElementsByTagName("input")
-		)
-	);
+		);
 
 	const inputsToBeChecked = new Set([
 		`${partOfSpeech}present`,
@@ -260,10 +267,10 @@ function areOnlyPresAffPlainChecked(partOfSpeech) {
 }
 
 function verbPresAffPlainCheckError() {
-	let optionsGroup = document.getElementById("verb-conjugation-type-group");
-	let errorElement = optionsGroup.getElementsByClassName(
-		"settings-error-text"
-	)[0];
+	// let optionsGroup = document.getElementById("verb-conjugation-type-group");
+	// let errorElement = optionsGroup.getElementsByClassName(
+	// 	"settings-error-text"
+	// )[0];
 
 	if (areOnlyPresAffPlainChecked(PARTS_OF_SPEECH.verb)) {
 		toggleError(
@@ -345,7 +352,7 @@ function showHideUiOptions(triggeringInputsClass, showHideContainerId) {
 function showHideVerbVariationOptions() {
 	// First try to show/hide all variation options
 	const showingAllVariations = showHideUiOptions(
-		"verb-has-variations",
+		"verb-selected",
 		"verb-variations-container"
 	);
 
@@ -386,20 +393,22 @@ export function applyAllSettingsFilterWords(settings, completeWordList) {
 
 	let currentWordList = createArrayOfArrays(completeWordList.length);
 
-	const verbRegex = /^verb.+/;
+	const verbRegex = /^verb_.+/;
 	if (settings.verb !== false) {
 		// Copy all of the verbs over
 		currentWordList[0] = [...completeWordList[0]];
+		// currentWordList[0] = [];
 
 		let verbOptions = Object.keys(settings).filter((el) =>
 			verbRegex.test(el)
 		);
+
 		// Filter out the verbs we don't want
 		for (let i = 0; i < verbOptions.length; i++) {
-			if (settings[verbOptions[i]] === false) {
-				currentWordList[0] = currentWordList[0].filter(
-					questionRemoveFilters.verbs[verbOptions[i]]
-				);
+			if (settings[verbOptions[i]] === true) {
+				currentWordList[0] = currentWordList[0].concat(completeWordList[0].filter(
+					questionRemoveFiltersController.verbs[verbOptions[i]]
+				));
 			}
 		}
 	}
@@ -422,105 +431,63 @@ export function applyAllSettingsFilterWords(settings, completeWordList) {
 		}
 	}
 
+	console.log(currentWordList)
 	return currentWordList;
 }
 
 // The input to these functions is a "Word" object defined in main.js.
 // If one of these filters is applied to an array of Words,
 // that type of Word will be removed from the array.
-const questionRemoveFilters = {
+const questionRemoveFiltersController = {
 	verbs: {
-		verbpresent: function (word) {
-			return word.conjugation.type !== CONJUGATION_TYPES.present;
+		// PRESENT TENSE
+		verb_present_indicative_informal_impolite: function (word) {
+			let bool = ((word.conjugation.type === CONJUGATION_TYPES.present) &&
+				(word.conjugation.formal === false) &&
+				(word.conjugation.polite === false))
+			return bool
 		},
-		verbpast: function (word) {
-			return word.conjugation.type !== CONJUGATION_TYPES.past;
+		verb_present_indicative_formal_impolite: function (word) {
+			let bool = ((word.conjugation.type === CONJUGATION_TYPES.present) &&
+				(word.conjugation.formal === true) &&
+				(word.conjugation.polite === false))
+			return bool
 		},
-		verbte: function (word) {
-			return word.conjugation.type !== CONJUGATION_TYPES.te;
+		verb_present_indicative_informal_polite: function (word) {
+			return ((word.conjugation.type === CONJUGATION_TYPES.present) &&
+				    (word.conjugation.formal === false) &&
+				    (word.conjugation.polite === true))
 		},
-		verbvolitional: function (word) {
-			return word.conjugation.type !== CONJUGATION_TYPES.volitional;
+		verb_present_indicative_formal_polite: function (word) {
+			return ((word.conjugation.type === CONJUGATION_TYPES.present) &&
+				    (word.conjugation.formal === true) &&
+				    (word.conjugation.polite === true))
 		},
-		verbpassive: function (word) {
-			return word.conjugation.type !== CONJUGATION_TYPES.passive;
+		// PAST TENSE
+		verb_past_indicative_informal_impolite: function (word) {
+			let bool = ((word.conjugation.type === CONJUGATION_TYPES.past) &&
+				(word.conjugation.formal === false) &&
+				(word.conjugation.polite === false))
+			return bool
 		},
-		verbcausative: function (word) {
-			return word.conjugation.type !== CONJUGATION_TYPES.causative;
+		verb_past_indicative_formal_impolite: function (word) {
+			let bool = ((word.conjugation.type === CONJUGATION_TYPES.past) &&
+				(word.conjugation.formal === true) &&
+				(word.conjugation.polite === false))
+			return bool
 		},
-		verbpotential: function (word) {
-			return word.conjugation.type !== CONJUGATION_TYPES.potential;
+		verb_past_indicative_informal_polite: function (word) {
+			return ((word.conjugation.type === CONJUGATION_TYPES.past) &&
+				    (word.conjugation.formal === false) &&
+				    (word.conjugation.polite === true))
 		},
-		verbimperative: function (word) {
-			return word.conjugation.type !== CONJUGATION_TYPES.imperative;
-		},
-
-		verbaffirmative: function (word) {
-			return word.conjugation.affirmative !== true;
-		},
-		verbnegative: function (word) {
-			return word.conjugation.affirmative !== false;
-		},
-
-		verbplain: function (word) {
-			return word.conjugation.polite !== false;
-		},
-		verbpolite: function (word) {
-			return word.conjugation.polite !== true;
-		},
-		verbinformal: function (word) {
-			return word.conjugation.formal !== false;
-		},
-		verbformal: function (word) {
-			return word.conjugation.formal !== true;
-		},
-
-		verbu: function (word) {
-			return word.wordJSON.type != "u";
-		},
-		verbru: function (word) {
-			return word.wordJSON.type != "ru";
-		},
-		verbirregular: function (word) {
-			return word.wordJSON.type != "irv";
-		},
-	},
-	adjectives: {
-		adjectivepresent: function (word) {
-			return word.conjugation.type !== CONJUGATION_TYPES.present;
-		},
-		adjectivepast: function (word) {
-			return word.conjugation.type !== CONJUGATION_TYPES.past;
-		},
-		adjectiveadverb: function (word) {
-			return word.conjugation.type !== CONJUGATION_TYPES.adverb;
-		},
-
-		adjectiveaffirmative: function (word) {
-			return word.conjugation.affirmative !== true;
-		},
-		adjectivenegative: function (word) {
-			return word.conjugation.affirmative !== false;
-		},
-
-		adjectiveplain: function (word) {
-			return word.conjugation.polite !== false;
-		},
-		adjectivepolite: function (word) {
-			return word.conjugation.polite !== true;
-		},
-
-		adjectivei: function (word) {
-			return word.wordJSON.type != "i";
-		},
-		adjectivena: function (word) {
-			return word.wordJSON.type != "na";
-		},
-		adjectiveirregular: function (word) {
-			return word.wordJSON.type != "ira";
-		},
-	},
-};
+		verb_past_indicative_formal_polite: function (word) {
+			return ((word.conjugation.type === CONJUGATION_TYPES.past) &&
+				    (word.conjugation.formal === true) &&
+				    (word.conjugation.polite === true))
+		}
+	}
+}
 
 /**
  * Searches the maxScoreObjects array for a maxScoreObject with specified settings.

@@ -1,7 +1,7 @@
 // since the weights are mostly only used to make things repeat after x amount of rounds, they are overkill
 // would be less work to just wait x rounds and immeditely show what you missed, without updating any weights.
 "use strict";
-import { bind, isJapanese } from "wanakana";
+// import { bind, isJapanese } from "wanakana";
 import {
 	CONDITIONAL_UI_TIMINGS,
 	getDefaultSettings,
@@ -41,6 +41,20 @@ const SCREENS = Object.freeze({
 	results: 1,
 	settings: 2,
 });
+
+function wordTypeToDisplayText(type) {
+	if (type == "u") {
+		return "う-verb";
+	} else if (type == "ru") {
+		return "る-verb";
+	} else if (type == "irv" || type == "ira") {
+		return "Irregular";
+	} else if (type == "i") {
+		return "い-adjective";
+	} else if (type == "na") {
+		return "な-adjective";
+	}
+}
 
 function conjugationInqueryFormatting(conjugation) {
 	let newString = "";
@@ -395,13 +409,17 @@ function pickRandomWord(wordList) {
 				if (random < wordList[i][j].probability) {
 					return wordList[i][j];
 				}
+				// console.log(random)
 				random -= wordList[i][j].probability;
 			}
 		}
 		throw "no random word chosen";
 	} catch (err) {
 		console.error(err);
-		return wordList[0][0];
+		function getRandomInt(max) {
+			return Math.floor(Math.random() * max);
+		}
+		return wordList[0][getRandomInt(wordList[0].length - 1)];
 	}
 }
 
@@ -536,7 +554,7 @@ function initApp() {
 class ConjugationApp {
 	constructor(words) {
 		const mainInput = document.getElementById("main-text-input");
-		bind(mainInput);
+		// bind(mainInput);
 
 		this.initState(words);
 
@@ -796,6 +814,7 @@ class ConjugationApp {
 			localStorage.setItem("maxScoreIndex", this.state.maxScoreIndex);
 
 			this.state.settings = getDefaultSettings();
+			
 			localStorage.setItem("settings", JSON.stringify(this.state.settings));
 
 			this.state.maxScoreObjects = [

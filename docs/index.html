@@ -1,64 +1,68 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Korean Conjugation Practice</title>
-        <meta name="description" content="Learn how to conjugate Korean verbs!">
-        <meta property="og:title" content="Korean Conjugation Practice">
-        <meta property="og:description" content="Learn how to conjugate Korean verbs!">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="streamlined_screenshot.png">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-        <link rel="stylesheet" href="index.071bb6de.css">
-        <link rel="icon" href="favicon.64306ec1.ico">
-        <link rel="apple-touch-icon" href="apple-touch-icon.e4c2060c.png">
-        <link rel="manifest" href="site.webmanifest">
-        <script type="module" defer="" src="index.85c9de2b.js"></script>
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Conjugation Practice</title>
+    <meta name="description" content="Learn how to conjugate Korean verbs!">
+    <meta property="og:title" content="Korean Conjugation Practice">
+    <meta property="og:description" content="Learn how to conjugate Korean verbs!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="streamlined_screenshot.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="index.d983f158.css">
+    <link rel="icon" href="favicon.64306ec1.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.e4c2060c.png">
+    <link rel="manifest" href="site.webmanifest">
+    <script type="module" defer="" src="index.8e99a68d.js"></script>
+</head>
+
+<body>
     <div id="toppest-container" class="display-none">
         <h1>Korean Conjugation Practice</h1>
         <div id="top-container">
             <div id="main-view">
                 <div id="streak-container">
-                        <div id="current-streak" class="streak">
-                            <p>Current Streak</p>
-                            <p id="current-streak-text">0</p>
-                        </div>
-                        <div id="max-streak" class="streak">
-                            <p>Max Streak</p>
-                            <p id="max-streak-text"> </p>
-                        </div>
+                    <div id="current-streak" class="streak">
+                        <p>Current Streak</p>
+                        <p id="current-streak-text">0</p>
                     </div>
-                    <div id="verb-container">
-                        <div id="verb-box">
-                            <p id="verb-text"></p>
-                            <p id="translation"></p>
-                            <p id="verb-type"></p>
-                        </div>
+                    <div id="max-streak" class="streak">
+                        <p>Max Streak</p>
+                        <p id="max-streak-text"> </p>
                     </div>
-                    <div id="conjugation-inquery-container">
-                        <p id="conjugation-inquery-text"></p>
+                </div>
+                <div id="verb-container">
+                    <div id="verb-box">
+                        <p id="verb-text"></p>
+                        <p id="translation"></p>
+                        <p id="verb-type"></p>
                     </div>
-                    <div id="status-container">
-                        <div id="status-box" class="display-none">
-                            <p id="status-text">Correct</p>
-                        </div>
+                </div>
+                <div id="conjugation-inquery-container">
+                    <p id="conjugation-inquery-text"></p>
+                </div>
+                <div id="status-container">
+                    <div id="status-box" class="display-none">
+                        <p id="status-text">Correct</p>
                     </div>
-                    <div id="input-container">
-                        <div id="input-tooltip" class="tooltip">Invalid characters. Only Japanese kana and kanji are valid.</div>
-                        <input id="main-text-input" type="text" maxlength="30" aria-label="Answer">
+                </div>
+                <div id="input-container">
+                    <div id="input-tooltip" class="tooltip">Invalid characters. Only Japanese kana and kanji are valid.
                     </div>
-                    <div id="settings-container">
-                        <div id="settings-child-container">
-                            <table id="settings-table">
-                                <td style="width:29%"></td>
-                                <td style="width:42%" id="press-any-key-text" class="display-none">Press Enter/Return to continue</td>
-                                <td style="width:29%"><button id="options-button">Options ⚙️</button></td>
-                            </table>
-                        </div>
+                    <input id="main-text-input" type="text" maxlength="30" aria-label="Answer">
+                </div>
+                <div id="settings-container">
+                    <div id="settings-child-container">
+                        <table id="settings-table">
+                            <td style="width:29%"></td>
+                            <td style="width:42%" id="press-any-key-text" class="display-none">Press Enter/Return to
+                                continue</td>
+                            <td style="width:29%"><button id="options-button">Options ⚙️</button></td>
+                        </table>
                     </div>
+                </div>
             </div>
             <div id="options-view" class="display-none">
                 <h2>Options</h2>
@@ -72,10 +76,12 @@
                             </div>
                         </div> -->
                         <div class="option-row">
-                            <div class="sub-option-row"><input id="translation-checkbox" type="checkbox" name="translation"><label for="translation-checkbox">Show English translations</label></div>
+                            <div class="sub-option-row"><input id="translation-checkbox" type="checkbox" name="translation"><label for="translation-checkbox">Show English
+                                    translations</label></div>
                             <div id="translation-sub-options" class="option-row options-indent sub-options">
                                 <div class="sub-option-row"><input id="translation-always-radio" type="radio" name="translationTiming" value="always"><label for="translation-always-radio">always</label></div>
-                                <div class="sub-option-row"><input id="translation-after-radio" type="radio" name="translationTiming" value="after"><label for="translation-after-radio">only after answering</label></div>
+                                <div class="sub-option-row"><input id="translation-after-radio" type="radio" name="translationTiming" value="after"><label for="translation-after-radio">only
+                                        after answering</label></div>
                             </div>
                         </div>
                         <div class="option-row"><input id="emoji-checkbox" type="checkbox" name="emoji"><label for="emoji-checkbox">Show emojis above conjugation types</label></div>
@@ -84,8 +90,11 @@
                     <div id="conjugation-settings">
                         <hr>
                         <div id="verbs-h3-container">
-                            <input id="verbs-checkbox" type="checkbox" name="verb"><label for="verbs-checkbox"><h3>Verbs</h3></label>
-                            <span id="top-must-choose" class="settings-error-text display-none">*Must choose at least 1 option from this category</span>
+                            <input id="verbs-checkbox" type="checkbox" name="verb" class="verb-selected"><label for="verbs-checkbox">
+                                <h3>Verbs</h3>
+                            </label>
+                            <span id="top-must-choose" class="settings-error-text display-none">*Must choose at least 1
+                                option from this category</span>
                         </div>
                         <div class="options-indent" id="verb-options-container">
                             <!-- <table style="width:100%" class="options-group">
@@ -97,25 +106,85 @@
                                 <tr><td><input id="verbirregular-checkbox" type="checkbox" name="verbirregular"><label for="verbirregular-checkbox">Irregular verbs</label></td></tr>
                             </table>
                             <hr> -->
-                            <div id="verb-conjugation-type-group" class="options-group">
-                            <table style="width:100%">
-                                <tr>
-                                    <td><input id="verbpresent-checkbox" type="checkbox" name="verbpresent" class="verb-has-variations"><label for="verbpresent-checkbox">Present tense</label></td>
-                                    <td rowspan="3" class="settings-error-text display-none">*Must choose at least 1 option from this category</td>
-                                </tr>
-                                <tr><td><input id="verbpast-checkbox" type="checkbox" name="verbpast" class="verb-has-variations"><label for="verbpast-checkbox">Past tense</label></td></tr>
-                                <!-- <tr><td><input id="verbte-checkbox" type="checkbox" name="verbte"><label for="verbte-checkbox">て-form</label></td></tr> -->
-                                <!-- <tr><td><input id="verbvolitional-checkbox" type="checkbox" name="verbvolitional" class="verb-has-politeness"><label for="verbvolitional-checkbox">Volitional (~よう)</label></td></tr> -->
-                            </table>
-                            <!-- <div class="advanced-section">
-                                <div id="advanced-text">ADVANCED</div>
-                                <div class="advanced-option"><input id="verbpassive-checkbox" type="checkbox" name="verbpassive" class="verb-has-variations"><label for="verbpassive-checkbox">Passive (~られる)</label></div>
-                                <div class="advanced-option"><input id="verbcausative-checkbox" type="checkbox" name="verbcausative" class="verb-has-variations"><label for="verbcausative-checkbox">Causative (~させる)</label></div>
-                                <div class="advanced-option"><input id="verbpotential-checkbox" type="checkbox" name="verbpotential" class="verb-has-variations"><label for="verbpotential-checkbox">Potential (~られる/れる)</label></div>
-                                <div class="advanced-option"><input id="verbimperative-checkbox" type="checkbox" name="verbimperative"><label for="verbimperative-checkbox">Imperative (~ろ)</label></div>
+                            <!-- <div id="verb-conjugation-type-group" class="options-group">
+                                <table style="width:100%">
+                                    <tr>
+                                        <td><input id="verbpresent-checkbox" type="checkbox" name="verbpresent"
+                                                class="verb-has-variations"><label for="verbpresent-checkbox">Present
+                                                tense</label></td>
+                                        <td rowspan="3" class="settings-error-text display-none">*Must choose at least 1
+                                            option from this category</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input id="verbpast-checkbox" type="checkbox" name="verbpast"
+                                                class="verb-has-variations"><label for="verbpast-checkbox">Past
+                                                tense</label></td>
+                                    </tr>
+                                </table>
                             </div> -->
-                            </div>
                             <div id="verb-variations-container">
+                                <div class="options-group">
+                                    <table style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <th colspan="4" class="settings-error-text display-none">*Must choose at
+                                                    least 1 option</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2" rowspan="1"></th>
+                                                <th>Informal</th>
+                                                <th>Formal</th>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="2" class="info-label">Present Indicative <a onclick="showFormDefinition('present-indicative')">(?)</a></th>
+                                                <th>Impolite</th>
+                                                <td>
+                                                    <input type="checkbox" id="present-indicative-informal-impolite" name="verb_present_indicative_informal_impolite">
+                                                    <label for="present-indicative-informal-impolite">먹어</label>
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" id="present-indicative-formal-impolite" name="verb_present_indicative_formal_impolite">
+                                                    <label for="present-indicative-formal-impolite">먹는다</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Polite</th>
+                                                <td>
+                                                    <input type="checkbox" id="present-indicative-informal-polite" name="verb_present_indicative_informal_polite">
+                                                    <label for="present-indicative-informal-polite">먹어요</label>
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" id="present-indicative-formal-polite" name="verb_present_indicative_formal_polite">
+                                                    <label for="present-indicative-formal-polite">먹습니다</label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th rowspan="2" class="info-label">Past Indicative <a onclick="showFormDefinition('past-indicative')">(?)</a></th>
+                                                <th>Impolite</th>
+                                                <td>
+                                                    <input type="checkbox" id="past-indicative-informal-impolite" name="verb_past_indicative_informal_impolite">
+                                                    <label for="past-indicative-informal-impolite">먹었어</label>
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" id="past-indicative-formal-impolite" name="verb_past_indicative_formal_impolite">
+                                                    <label for="past-indicative-formal-impolite">먹었다</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Polite</th>
+                                                <td>
+                                                    <input type="checkbox" id="past-indicative-informal-polite" name="verb_past_indicative_informal_polite">
+                                                    <label for="past-indicative-informal-polite">먹었어요</label>
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" id="past-indicative-formal-polite" name="verb_past_indicative_formal_polite">
+                                                    <label for="past-indicative-formal-polite">먹었습니다</label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                                 <!-- <div class="options-group">
                                     <hr>
                                     <table style="width:100%">
@@ -126,26 +195,37 @@
                                         <tr><td><input id="verbnegative-checkbox" type="checkbox" name="verbnegative"><label for="verbnegative-checkbox">Negative</label></td></tr>
                                     </table>
                                 </div> -->
-                                <div id="verb-formality-container" class="options-group">
+                                <!-- <div id="verb-formality-container" class="options-group">
                                     <hr>
                                     <table style="width:100%">
                                         <tr>
-                                            <td><input id="verbinformal-checkbox" type="checkbox" name="verbinformal"><label for="verbinformal-checkbox">Informal</label></td>
-                                            <td rowspan="2" class="settings-error-text display-none">*Must choose at least 1 option from this category</td>
+                                            <td><input id="verbinformal-checkbox" type="checkbox"
+                                                    name="verbinformal"><label
+                                                    for="verbinformal-checkbox">Informal</label></td>
+                                            <td rowspan="2" class="settings-error-text display-none">*Must choose at
+                                                least 1 option from this category</td>
                                         </tr>
-                                        <tr><td><input id="verbformal-checkbox" type="checkbox" name="verbformal"><label for="verbformal-checkbox">Formal</label></td></tr>
+                                        <tr>
+                                            <td><input id="verbformal-checkbox" type="checkbox" name="verbformal"><label
+                                                    for="verbformal-checkbox">Formal</label></td>
+                                        </tr>
                                     </table>
                                 </div>
                                 <div id="verb-politeness-container" class="options-group">
                                     <hr>
                                     <table style="width:100%">
                                         <tr>
-                                            <td><input id="verbplain-checkbox" type="checkbox" name="verbplain"><label for="verbplain-checkbox">Impolite</label></td>
-                                            <td rowspan="2" class="settings-error-text display-none">*Must choose at least 1 option from this category</td>
+                                            <td><input id="verbplain-checkbox" type="checkbox" name="verbplain"><label
+                                                    for="verbplain-checkbox">Impolite</label></td>
+                                            <td rowspan="2" class="settings-error-text display-none">*Must choose at
+                                                least 1 option from this category</td>
                                         </tr>
-                                        <tr><td><input id="verbpolite-checkbox" type="checkbox" name="verbpolite"><label for="verbpolite-checkbox">Polite</label></td></tr>
+                                        <tr>
+                                            <td><input id="verbpolite-checkbox" type="checkbox" name="verbpolite"><label
+                                                    for="verbpolite-checkbox">Polite</label></td>
+                                        </tr>
                                     </table>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- <div id="adjectives-h3-container">
@@ -195,17 +275,19 @@
                     </div>
                     <div id="back-button-container">
                         <button type="submit" id="back-button">Back ↩</button>
-                    </div>    
+                    </div>
                 </form>
             </div>
         </div>
         <div id="donation-section" class="display-none">
             <p class="footer-text">
-                This app's <a href="https://github.com/andygoh5/korean-conjugation" target="_blank">source code</a> 
-                is available to use under the AGPL-3.0 license. The website code is borrowed from the 
-                <a href="https://baileysnyder.com/jconj/">Japanese Conjugation website </a>(<a href="https://github.com/baileysnyder/japanese-conjugation">source code</a>) under the GPL-3.0 license,
+                This app's <a href="https://github.com/andygoh5/korean-conjugation" target="_blank">source code</a>
+                is available to use under the AGPL-3.0 license. The website code is borrowed from the
+                <a href="https://baileysnyder.com/jconj/">Japanese Conjugation website </a>(<a href="https://github.com/baileysnyder/japanese-conjugation">source code</a>) under the GPL-3.0
+                license,
                 and the Korean conjugation code is borrowed from <a href="https://koreanverb.app/?search=%ED%95%98%EB%8B%A4">Dongsa</a> (<a href="https://github.com/max-christian/korean_conjugation">source code</a>)
-                under the AGPL-3.0 license.</p> 
+                under the AGPL-3.0 license.
+            </p>
             <!-- <p class="footer-text">If you've found this app useful and would like to help support it, please consider donating!</p>
             <form action="https://www.paypal.com/donate" method="post" target="_top">
                 <input type="hidden" name="hosted_button_id" value="D3QUUDNRVJYLL" />
@@ -213,5 +295,6 @@
             </form> -->
         </div>
     </div>
-    </body>
+</body>
+
 </html>

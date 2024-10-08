@@ -34,8 +34,8 @@ input {
 
 input[type="checkbox"],
 input[type="radio"],
-input[type="checkbox"] + label,
-input[type="radio"] + label {
+input[type="checkbox"]+label,
+input[type="radio"]+label {
 	cursor: pointer;
 }
 
@@ -64,6 +64,7 @@ input[type="radio"] + label {
 	from {
 		transform: scale(1.7);
 	}
+
 	to {
 		transform: scale(1);
 	}
@@ -205,12 +206,15 @@ span.rt {
 	0% {
 		opacity: 0;
 	}
+
 	6% {
 		opacity: 1;
 	}
+
 	80% {
 		opacity: 1;
 	}
+
 	100% {
 		opacity: 0;
 	}
@@ -347,7 +351,7 @@ h2 {
 }
 
 .settings-error-text {
-	float: right;
+	/* float: right; */
 	color: rgb(236, 51, 51);
 	text-align: right;
 	font-size: 0.6rem;
@@ -450,6 +454,7 @@ hr {
 	margin-top: 0.1rem;
 	border: 2px solid #424242;
 }
+
 .advanced-option {
 	margin-bottom: 0.2rem;
 }
@@ -476,7 +481,9 @@ hr {
 
 /* On smaller screens, we prevent verb-type and status-container from taking up screen height when they're invisible so on-screen keyboards don't cover up parts of the app while answering.
 On larger screens, we allow verb-type and status-container to always take up screen height so the app stays the same height between the question and results screen. */
-@media screen and (min-height: 820px), screen and (min-width: 510px) {
+@media screen and (min-height: 820px),
+screen and (min-width: 510px) {
+
 	.question-screen #verb-type,
 	.results-screen #verb-box.background-none #verb-type {
 		display: block;
@@ -491,24 +498,30 @@ On larger screens, we allow verb-type and status-container to always take up scr
 	html {
 		font-size: 18px;
 	}
+
 	#toppest-container {
 		width: 510px;
 	}
+
 	#top-container {
 		padding: 0.6rem 0.6rem;
 	}
+
 	h1 {
 		font-size: 1.4rem;
 		margin-bottom: 0.9rem;
 		margin-top: 0.9rem;
 		display: block;
 	}
+
 	#input-container {
 		margin-bottom: 0.4rem;
 	}
+
 	#conjugation-inquery-text {
 		margin-top: 1rem;
 	}
+
 	#status-container {
 		margin: 1rem;
 	}
@@ -518,6 +531,7 @@ On larger screens, we allow verb-type and status-container to always take up scr
 	html {
 		font-size: 20px;
 	}
+
 	#toppest-container {
 		width: 575px;
 	}
@@ -527,11 +541,30 @@ On larger screens, we allow verb-type and status-container to always take up scr
 	html {
 		font-size: 22px;
 	}
+
 	#toppest-container {
 		width: 650px;
 	}
+
 	h1 {
 		margin-bottom: 1rem;
 		margin-top: 1rem;
 	}
+}
+
+#selectors {
+	display: block;
+	margin: 0 auto;
+	width: fit-content
+}
+
+td,
+th {
+	padding: 5px 10px;
+	border: 2px solid #04151f
+}
+
+td a,
+th a {
+	text-decoration: none
 }
