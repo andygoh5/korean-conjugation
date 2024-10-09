@@ -6,11 +6,12 @@ export const PARTS_OF_SPEECH = Object.freeze({
 export const CONJUGATION_TYPES = Object.freeze({
 	present: "Present",
 	past: "Past",
+	future: "Future",
 	te: "て-form",
 	adverb: "Adverb",
 	volitional: "Volitional",
 	passive: "Passive",
 	causative: "Causative",
 	potential: "Potential",
-	imperative: "Imperative",
+	imperative: "Imperative"
 });

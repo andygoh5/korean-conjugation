@@ -1,0 +1,2 @@
+function e(e){for(let t of Array.from(document.getElementById("options-form").querySelectorAll(`[id^="${e.id}"]`)))t!==e&&(t.checked=e.checked)}const t=document.getElementById("present-declarative");t.addEventListener("click",()=>e(t));const c=document.getElementById("past-declarative");c.addEventListener("click",()=>e(c));const d=document.getElementById("future-declarative");d.addEventListener("click",()=>e(d));
+//# sourceMappingURL=index.5879f61d.js.map

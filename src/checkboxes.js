@@ -10,8 +10,11 @@ function selectAll(source) {
 	}
 }
 
-const presIndAll = document.getElementById('present-indicative')
+const presIndAll = document.getElementById('present-declarative')
 presIndAll.addEventListener('click', () => selectAll(presIndAll));
 
-const pastIndAll = document.getElementById('past-indicative')
+const pastIndAll = document.getElementById('past-declarative')
 pastIndAll.addEventListener('click', () => selectAll(pastIndAll));
+
+const futureIndAll = document.getElementById('future-declarative')
+futureIndAll.addEventListener('click', () => selectAll(futureIndAll));

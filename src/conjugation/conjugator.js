@@ -667,6 +667,16 @@ export var conjugator_functions = {
 				"plain": conjugator.declarative_past_formal_low,
 				"polite": conjugator.declarative_past_formal_high
 			}
+		},
+        "future": {
+			"informal": {
+				"plain": conjugator.declarative_future_informal_low,
+				"polite": conjugator.declarative_future_informal_high
+			}, 
+			"formal": {
+				"plain": conjugator.declarative_future_formal_low,
+				"polite": conjugator.declarative_future_formal_high
+			}
 		}
 	}
 }

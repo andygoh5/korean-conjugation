@@ -428,12 +428,12 @@ export function applyAllSettingsFilterWords(settings, completeWordList) {
 			);
 		}
 
-
 		// Filter out the verbs we don't want
 		for (let i = 0; i < verbOptions.length; i++) {
 			if (settings[verbOptions[i]] === true) {
+				let filterFunc = parseVerbOption(verbOptions[i])
 				currentWordList[0] = currentWordList[0].concat(completeWordList[0].filter(
-					questionRemoveFiltersController.verbs[verbOptions[i]]
+					filterFunc
 				));
 			}
 		}
@@ -459,58 +459,24 @@ export function applyAllSettingsFilterWords(settings, completeWordList) {
 	return [currentWordList, settings];
 }
 
-// The input to these functions is a "Word" object defined in main.js.
-// If one of these filters is applied to an array of Words,
-// that type of Word will be removed from the array.
-const questionRemoveFiltersController = {
-	verbs: {
-		// PRESENT TENSE
-		verb_present_indicative_informal_impolite: function (word) {
-			let bool = ((word.conjugation.type === CONJUGATION_TYPES.present) &&
-				(word.conjugation.formal === false) &&
-				(word.conjugation.polite === false))
-			return bool
-		},
-		verb_present_indicative_formal_impolite: function (word) {
-			let bool = ((word.conjugation.type === CONJUGATION_TYPES.present) &&
-				(word.conjugation.formal === true) &&
-				(word.conjugation.polite === false))
-			return bool
-		},
-		verb_present_indicative_informal_polite: function (word) {
-			return ((word.conjugation.type === CONJUGATION_TYPES.present) &&
-				    (word.conjugation.formal === false) &&
-				    (word.conjugation.polite === true))
-		},
-		verb_present_indicative_formal_polite: function (word) {
-			return ((word.conjugation.type === CONJUGATION_TYPES.present) &&
-				    (word.conjugation.formal === true) &&
-				    (word.conjugation.polite === true))
-		},
-		// PAST TENSE
-		verb_past_indicative_informal_impolite: function (word) {
-			let bool = ((word.conjugation.type === CONJUGATION_TYPES.past) &&
-				(word.conjugation.formal === false) &&
-				(word.conjugation.polite === false))
-			return bool
-		},
-		verb_past_indicative_formal_impolite: function (word) {
-			let bool = ((word.conjugation.type === CONJUGATION_TYPES.past) &&
-				(word.conjugation.formal === true) &&
-				(word.conjugation.polite === false))
-			return bool
-		},
-		verb_past_indicative_informal_polite: function (word) {
-			return ((word.conjugation.type === CONJUGATION_TYPES.past) &&
-				    (word.conjugation.formal === false) &&
-				    (word.conjugation.polite === true))
-		},
-		verb_past_indicative_formal_polite: function (word) {
-			return ((word.conjugation.type === CONJUGATION_TYPES.past) &&
-				    (word.conjugation.formal === true) &&
-				    (word.conjugation.polite === true))
-		}
+function parseVerbOption(verbOption) {
+	let options = verbOption.split("_").slice(1);
+	const conjTypeMap = {
+		"present": CONJUGATION_TYPES.present,
+		"past": CONJUGATION_TYPES.past,
+		"future": CONJUGATION_TYPES.future
 	}
+	let conjugation_type = conjTypeMap[options[0]];
+	let formality = (options[2] == "formal")
+	let politeness = (options[3] == "polite")
+
+	let filterFunction = function (word) {
+		return ((word.conjugation.type === conjugation_type) &&
+			(word.conjugation.formal === formality) &&
+			(word.conjugation.polite === politeness))
+	}
+
+	return filterFunction
 }
 
 /**

@@ -30,6 +30,9 @@ import {
 
 import { conjugator_functions } from "./conjugation/conjugator.js";
 
+const APP_VERSION = "1.0.0";
+
+
 const isTouch = "ontouchstart" in window || navigator.msMaxTouchPoints > 0;
 document.getElementById("press-any-key-text").textContent = isTouch
 	? "Tap to continue"
@@ -66,6 +69,8 @@ function conjugationInqueryFormatting(conjugation) {
 
 	if (conjugation.type === CONJUGATION_TYPES.past) {
 		newString += createInqueryText(CONJUGATION_TYPES.past, "⌚");
+	} else if (conjugation.type === CONJUGATION_TYPES.future) {
+		newString += createInqueryText(CONJUGATION_TYPES.future, "⌚");
 	} else if (
 		conjugation.type === CONJUGATION_TYPES.te ||
 		conjugation.type === CONJUGATION_TYPES.adverb
@@ -159,8 +164,10 @@ function getKoreanConjugation(word, mood, tense, formality, politeness) {
 	let type;
 	if (tense == "present") {
 		type = CONJUGATION_TYPES.present;
-	} else {
+	} else if (tense == "past") {
 		type = CONJUGATION_TYPES.past;
+	} else {
+		type = CONJUGATION_TYPES.future;
 	}
 
 	return new Conjugation(
@@ -177,9 +184,9 @@ function getAllKoreanConjugations(wordJSON) {
 	const word = extractKoreanCharacters(wordJSON.hangeul)
 
 	const moods = ["declarative"];
-	const tenses = ["present", "past"]
-	const formalities = ["informal", "formal"]
-	const politeness = ["plain", "polite"]
+	const tenses = ["present", "past", "future"];
+	const formalities = ["informal", "formal"];
+	const politeness = ["plain", "polite"];
 
 	for (const mood of moods) {
 		for (const tense of tenses) {
@@ -809,8 +816,12 @@ class ConjugationApp {
 		if (
 			!localStorage.getItem("maxScoreObjects") ||
 			!localStorage.getItem("maxScoreIndex") ||
-			!localStorage.getItem("settings")
+			!localStorage.getItem("settings") ||
+			localStorage.getItem("version") != APP_VERSION
 		) {
+			localStorage.clear();
+			localStorage.setItem("version", APP_VERSION);
+
 			this.state.maxScoreIndex = 0;
 			localStorage.setItem("maxScoreIndex", this.state.maxScoreIndex);
 
