@@ -88,7 +88,7 @@ export const koreanWordData = {
             "eng": "to walk to"
         },
         {
-            "hangeul": "걸이오다",
+            "hangeul": "걸어오다",
             "eng": "to walk from"
         },
         {
