@@ -71,13 +71,6 @@ export const getDefaultAdditiveSettings = () => {
 		settings[input.name] = true;
 	}
 
-	const inputs = document
-		.getElementById("options-form")
-		.querySelectorAll('[type="checkbox"]');
-	for (const input of Array.from(inputs)) {
-		settings[input.name] = true;
-	}
-
 	// Set input radio values
 	settings["translationTiming"] = CONDITIONAL_UI_TIMINGS.always;
 	settings["furiganaTiming"] = CONDITIONAL_UI_TIMINGS.always;
@@ -417,6 +410,7 @@ export function applyAllSettingsFilterWords(settings, completeWordList) {
 			}
 		}
 
+		// check if none of the verbs are selected by accident on load
 		if (filters== 0) {
 			const inputs = document
 				.getElementById("options-form")

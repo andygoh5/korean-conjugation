@@ -19,6 +19,7 @@ import {
 	insertSettingsFromUi,
 	getDefaultAdditiveSettings,
 } from "./settingManagement.js";
+
 import { japaneseWordData, koreanWordData, fullWordData } from "./worddata.js";
 import { CONJUGATION_TYPES, PARTS_OF_SPEECH } from "./wordEnums.js";
 import {
