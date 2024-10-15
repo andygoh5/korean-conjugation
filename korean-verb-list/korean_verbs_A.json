@@ -1,4 +1,4 @@
-export const koreanWordData = {
+{
     "verbs": [
         {
             "hangeul": "하다",
@@ -14,7 +14,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "보다",
-            "eng": "To see/to watch"
+            "eng": "To try"
         },
         {
             "hangeul": "가다",
@@ -34,15 +34,19 @@ export const koreanWordData = {
         },
         {
             "hangeul": "받다",
-            "eng": "To receive"
+            "eng": "Receive"
         },
         {
             "hangeul": "나오다",
-            "eng": "To come out"
+            "eng": "Come out"
         },
         {
             "hangeul": "살다",
             "eng": "To live"
+        },
+        {
+            "hangeul": "못하다",
+            "eng": "Be impossible"
         },
         {
             "hangeul": "생각하다",
@@ -58,14 +62,14 @@ export const koreanWordData = {
         },
         {
             "hangeul": "먹다",
-            "eng": "To eat"
+            "eng": "Eat, chow down on"
         },
         {
             "hangeul": "가지다",
             "eng": "To have or take or hold"
         },
         {
-            "hangeul": "태어나다",
+            "hangeul": "나다",
             "eng": "To be born"
         },
         {
@@ -74,15 +78,19 @@ export const koreanWordData = {
         },
         {
             "hangeul": "만나다",
-            "eng": "To meet"
+            "eng": "Meet"
         },
         {
             "hangeul": "내다",
-            "eng": "To produce something"
+            "eng": "produce something"
         },
         {
             "hangeul": "쓰다",
             "eng": "To write"
+        },
+        {
+            "hangeul": "쓰다",
+            "eng": "Take (medicine)"
         },
         {
             "hangeul": "앉다",
@@ -90,11 +98,11 @@ export const koreanWordData = {
         },
         {
             "hangeul": "찾다",
-            "eng": "To seek,look for"
+            "eng": "seek,look for"
         },
         {
             "hangeul": "나가다",
-            "eng": "To go out/exit"
+            "eng": "To go out"
         },
         {
             "hangeul": "사다",
@@ -102,7 +110,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "잡다",
-            "eng": "To seize,catch"
+            "eng": "seize,catch"
         },
         {
             "hangeul": "서다",
@@ -118,7 +126,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "넣다",
-            "eng": "To put in"
+            "eng": "Put in, set in"
         },
         {
             "hangeul": "부르다",
@@ -126,15 +134,15 @@ export const koreanWordData = {
         },
         {
             "hangeul": "죽다",
-            "eng": "To die,pass away"
+            "eng": "die,pass away"
         },
         {
             "hangeul": "내리다",
-            "eng": "To fall (as in rain or snow)"
+            "eng": "Descend"
         },
         {
             "hangeul": "생기다",
-            "eng": "To be formed"
+            "eng": "arise,occur,happen"
         },
         {
             "hangeul": "사용하다",
@@ -142,23 +150,23 @@ export const koreanWordData = {
         },
         {
             "hangeul": "타다",
-            "eng": "To ride/get on (bus)"
+            "eng": "Ride (bus)"
         },
         {
             "hangeul": "보내다",
-            "eng": "To send"
+            "eng": "Send"
         },
         {
             "hangeul": "다니다",
-            "eng": "To attend"
+            "eng": "Go to and from a aplace"
         },
         {
             "hangeul": "열다",
-            "eng": "To open"
+            "eng": "Open"
         },
         {
             "hangeul": "묻다",
-            "eng": "To ask"
+            "eng": "to Ask"
         },
         {
             "hangeul": "웃다",
@@ -174,23 +182,23 @@ export const koreanWordData = {
         },
         {
             "hangeul": "치다",
-            "eng": "To attack, assault"
+            "eng": "to attack, assault"
         },
         {
             "hangeul": "끝나다",
-            "eng": "To end/To draw to a close"
+            "eng": "To draw to a close or to end"
         },
         {
             "hangeul": "오르다",
-            "eng": "To go up, climb, ascend"
+            "eng": "Go up, climb, ascend"
         },
         {
             "hangeul": "놀다",
-            "eng": "To play"
+            "eng": "Play, amuse oneself"
         },
         {
             "hangeul": "바꾸다",
-            "eng": "To change,exchange"
+            "eng": "change,exchange"
         },
         {
             "hangeul": "좋아하다",
@@ -198,7 +206,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "그리다",
-            "eng": "To draw"
+            "eng": "Picture or draw a picture"
         },
         {
             "hangeul": "배우다",
@@ -230,7 +238,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "말다",
-            "eng": "To not do a certain work or behavior, or stop doing it"
+            "eng": "Cease"
         },
         {
             "hangeul": "설명하다",
@@ -238,7 +246,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "놀라다",
-            "eng": "To be surprised"
+            "eng": "Be surprised"
         },
         {
             "hangeul": "울다",
@@ -246,7 +254,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "지내다",
-            "eng": "To pass/spend time"
+            "eng": "To pass, spend time"
         },
         {
             "hangeul": "팔다",
@@ -261,12 +269,16 @@ export const koreanWordData = {
             "eng": "To go up, ascend"
         },
         {
+            "hangeul": "태어나다",
+            "eng": "To be born, see the light of day"
+        },
+        {
             "hangeul": "가르치다",
             "eng": "To teach"
         },
         {
             "hangeul": "걸다",
-            "eng": "To hang up (something)"
+            "eng": "Hang up or suspend"
         },
         {
             "hangeul": "얘기하다",
@@ -274,7 +286,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "잃다",
-            "eng": "To lose (something)"
+            "eng": "To lose, to miss, to be deprived"
         },
         {
             "hangeul": "사랑하다",
@@ -286,11 +298,11 @@ export const koreanWordData = {
         },
         {
             "hangeul": "닦다",
-            "eng": "To wipe clean, polish"
+            "eng": "Wipe clean, polish"
         },
         {
             "hangeul": "내려오다",
-            "eng": "To come down"
+            "eng": "Come down"
         },
         {
             "hangeul": "안다",
@@ -306,7 +318,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "쉬다",
-            "eng": "To relax, take a break"
+            "eng": "to relax, take a break"
         },
         {
             "hangeul": "싸우다",
@@ -326,7 +338,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "벗다",
-            "eng": "To take off (clothing)"
+            "eng": "Take off, remove"
         },
         {
             "hangeul": "준비하다",
@@ -334,19 +346,23 @@ export const koreanWordData = {
         },
         {
             "hangeul": "결혼하다",
-            "eng": "To get married"
+            "eng": "Get married"
         },
         {
             "hangeul": "계시다",
-            "eng": "To be (honorific of 있다)"
+            "eng": "(someone esteemed) to stay or be located"
         },
         {
             "hangeul": "찍다",
-            "eng": "To take (a picture)"
+            "eng": "Stamp with a dojang"
         },
         {
             "hangeul": "피우다",
-            "eng": "To make bloom or burn"
+            "eng": "To make, build, kindle"
+        },
+        {
+            "hangeul": "불다",
+            "eng": "Blow"
         },
         {
             "hangeul": "도착하다",
@@ -354,15 +370,15 @@ export const koreanWordData = {
         },
         {
             "hangeul": "적다",
-            "eng": "To write down"
+            "eng": "Write down"
         },
         {
             "hangeul": "말씀하다",
-            "eng": "To speak"
+            "eng": "Speak"
         },
         {
             "hangeul": "소개하다",
-            "eng": "To introduce"
+            "eng": "To introduce,present"
         },
         {
             "hangeul": "끝내다",
@@ -370,7 +386,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "물어보다",
-            "eng": "To ask"
+            "eng": "Ask"
         },
         {
             "hangeul": "쓰다",
@@ -378,7 +394,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "다녀오다",
-            "eng": "To go somewhere and come back"
+            "eng": "Drop in for a short visit"
         },
         {
             "hangeul": "닫다",
@@ -405,12 +421,16 @@ export const koreanWordData = {
             "eng": "To fly"
         },
         {
+            "hangeul": "추다",
+            "eng": "To dance"
+        },
+        {
             "hangeul": "켜다",
             "eng": "To light, turn on, kindle"
         },
         {
             "hangeul": "깎다",
-            "eng": "To cut or trim"
+            "eng": "Cut or trim"
         },
         {
             "hangeul": "걱정하다",
@@ -418,7 +438,7 @@ export const koreanWordData = {
         },
         {
             "hangeul": "끄다",
-            "eng": "To put out or extinguish"
+            "eng": "Put out or extinguish"
         },
         {
             "hangeul": "잃어버리다",
@@ -434,7 +454,11 @@ export const koreanWordData = {
         },
         {
             "hangeul": "신다",
-            "eng": "To put on, wear (shoes and socks)"
+            "eng": "Put on, wear"
+        },
+        {
+            "hangeul": "크다",
+            "eng": "To be big, large"
         },
         {
             "hangeul": "지우다",
@@ -466,15 +490,19 @@ export const koreanWordData = {
         },
         {
             "hangeul": "전화하다",
-            "eng": "To call (on the phone)"
+            "eng": "To call"
+        },
+        {
+            "hangeul": "잠자다",
+            "eng": "Fall asleep"
         },
         {
             "hangeul": "축하하다",
-            "eng": "To congratulate"
+            "eng": "To Congratulate sb"
         },
         {
             "hangeul": "운동하다",
-            "eng": "To exercise"
+            "eng": "To do exercise"
         },
         {
             "hangeul": "청소하다",
@@ -490,11 +518,11 @@ export const koreanWordData = {
         },
         {
             "hangeul": "초대하다",
-            "eng": "To invite"
+            "eng": "To invide"
         },
         {
             "hangeul": "연습하다",
-            "eng": "To practice"
+            "eng": "To practice,exercise"
         },
         {
             "hangeul": "식사하다",
@@ -505,12 +533,20 @@ export const koreanWordData = {
             "eng": "To travel"
         },
         {
+            "hangeul": "잡수시다",
+            "eng": "eat,drink"
+        },
+        {
             "hangeul": "질문하다",
-            "eng": "To ask a person a question"
+            "eng": "Ask a person a question"
         },
         {
             "hangeul": "운전하다",
             "eng": "To drive"
+        },
+        {
+            "hangeul": "선물하다",
+            "eng": "Give a gift"
         },
         {
             "hangeul": "요리하다",
@@ -518,20 +554,11 @@ export const koreanWordData = {
         },
         {
             "hangeul": "실례하다",
-            "eng": "To cause/be of inconvenience"
+            "eng": "To be impolite"
         },
         {
             "hangeul": "기다리다",
             "eng": "To wait"
-        },
-        {
-            "hangeul": "알바하다",
-            "eng": "To work part-time"
-        },
-        {
-            "hangeul": "숙제하다",
-            "eng": "To do homework"
         }
-    ],
-    "adjectives": []
+    ]
 }

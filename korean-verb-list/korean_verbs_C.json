@@ -1,0 +1,2560 @@
+{
+    "verbs": [
+        {
+            "hangeul": "알아보다",
+            "eng": "To investigate, examine, search"
+        },
+        {
+            "hangeul": "비하다",
+            "eng": "Compare to"
+        },
+        {
+            "hangeul": "올리다",
+            "eng": "Raise, lift up"
+        },
+        {
+            "hangeul": "지니다",
+            "eng": "Carry with, hold, possess"
+        },
+        {
+            "hangeul": "당하다",
+            "eng": "Have, encounter"
+        },
+        {
+            "hangeul": "삼다",
+            "eng": "Make a thing of"
+        },
+        {
+            "hangeul": "대다",
+            "eng": "Put, place up to"
+        },
+        {
+            "hangeul": "인하다",
+            "eng": "To be due to, caused by"
+        },
+        {
+            "hangeul": "잇다",
+            "eng": "Join, connect"
+        },
+        {
+            "hangeul": "갖추다",
+            "eng": "Make or get ready or prepare"
+        },
+        {
+            "hangeul": "존재하다",
+            "eng": "To exist"
+        },
+        {
+            "hangeul": "유지하다",
+            "eng": "To preserve, maintain"
+        },
+        {
+            "hangeul": "피하다",
+            "eng": "avoid,keep away"
+        },
+        {
+            "hangeul": "거치다",
+            "eng": "Pass or go through"
+        },
+        {
+            "hangeul": "나아가다",
+            "eng": "Advance, go forward"
+        },
+        {
+            "hangeul": "걸치다",
+            "eng": "1) put a thing over or across 2) to range from A to B"
+        },
+        {
+            "hangeul": "겪다",
+            "eng": "Experience or undergo or suffer"
+        },
+        {
+            "hangeul": "비롯하다",
+            "eng": "begin,start"
+        },
+        {
+            "hangeul": "인정하다",
+            "eng": "To acknowledge,authorize"
+        },
+        {
+            "hangeul": "불구하다",
+            "eng": "Deformity, malformation"
+        },
+        {
+            "hangeul": "비다",
+            "eng": "To be empty, vacant"
+        },
+        {
+            "hangeul": "살아가다",
+            "eng": "Lead a life, get along"
+        },
+        {
+            "hangeul": "제시하다",
+            "eng": "To present"
+        },
+        {
+            "hangeul": "파악하다",
+            "eng": "Grasp, seize, understand"
+        },
+        {
+            "hangeul": "이어지다",
+            "eng": "Get joined, be connected"
+        },
+        {
+            "hangeul": "차다",
+            "eng": "To be full"
+        },
+        {
+            "hangeul": "여기다",
+            "eng": "Think, consider as"
+        },
+        {
+            "hangeul": "터지다",
+            "eng": "Break, be torn, get away from"
+        },
+        {
+            "hangeul": "다루다",
+            "eng": "Treat, deal with"
+        },
+        {
+            "hangeul": "깨닫다",
+            "eng": "to realize sth"
+        },
+        {
+            "hangeul": "참여하다",
+            "eng": "To participate in, take part in"
+        },
+        {
+            "hangeul": "이끌다",
+            "eng": "To guide,lead"
+        },
+        {
+            "hangeul": "기울이다",
+            "eng": "Tip or slant or incline"
+        },
+        {
+            "hangeul": "더불다",
+            "eng": "Join in, do together"
+        },
+        {
+            "hangeul": "극복하다",
+            "eng": "To overcome or surmount"
+        },
+        {
+            "hangeul": "쓰이다",
+            "eng": "To be used, to be utilized/employed"
+        },
+        {
+            "hangeul": "다지다",
+            "eng": "Make sure, to harden oneself, firm up one\\\\`s will"
+        },
+        {
+            "hangeul": "치르다",
+            "eng": "Pay off, pay one’s bill"
+        },
+        {
+            "hangeul": "구성되다",
+            "eng": "To be organized"
+        },
+        {
+            "hangeul": "추진하다",
+            "eng": "To propel, drive forward"
+        },
+        {
+            "hangeul": "증가하다",
+            "eng": "increase,rise,grow"
+        },
+        {
+            "hangeul": "외치다",
+            "eng": "To shout,scream"
+        },
+        {
+            "hangeul": "넘기다",
+            "eng": "Pass over, send across"
+        },
+        {
+            "hangeul": "제외하다",
+            "eng": "To exclude"
+        },
+        {
+            "hangeul": "주어지다",
+            "eng": "To offer, proffer (conditions)"
+        },
+        {
+            "hangeul": "소재",
+            "eng": "material, subject matter"
+        },
+        {
+            "hangeul": "형성되다",
+            "eng": "To be formed, made up"
+        },
+        {
+            "hangeul": "작용하다",
+            "eng": "To apply , use"
+        },
+        {
+            "hangeul": "거두다",
+            "eng": "Collect or gather up"
+        },
+        {
+            "hangeul": "퍼지다",
+            "eng": "Spread out, get broader"
+        },
+        {
+            "hangeul": "앞두다",
+            "eng": "Have a distance ahead"
+        },
+        {
+            "hangeul": "보호하다",
+            "eng": "protect,shelter,guard"
+        },
+        {
+            "hangeul": "애쓰다",
+            "eng": "Make efforts/pains to do sth"
+        },
+        {
+            "hangeul": "인식하다",
+            "eng": "recognition,cognizance"
+        },
+        {
+            "hangeul": "맺다",
+            "eng": "form,tie"
+        },
+        {
+            "hangeul": "구성하다",
+            "eng": "To organize or makeup"
+        },
+        {
+            "hangeul": "생산하다",
+            "eng": "To produce,make"
+        },
+        {
+            "hangeul": "저지르다",
+            "eng": "do,commit,spoil"
+        },
+        {
+            "hangeul": "줄어들다",
+            "eng": "Dwindle away"
+        },
+        {
+            "hangeul": "살아오다",
+            "eng": "To come out alive"
+        },
+        {
+            "hangeul": "지켜보다",
+            "eng": "Watch, stare at ( wait on some situation)"
+        },
+        {
+            "hangeul": "무너지다",
+            "eng": "Collapse"
+        },
+        {
+            "hangeul": "이러다",
+            "eng": "do/say think this way"
+        },
+        {
+            "hangeul": "일어서다",
+            "eng": "To rise to one’s feet, stand up"
+        },
+        {
+            "hangeul": "의식하다",
+            "eng": "Be conscious of, be aware of"
+        },
+        {
+            "hangeul": "살피다",
+            "eng": "Take a good look at"
+        },
+        {
+            "hangeul": "거부하다",
+            "eng": "Deny or reject or disapprove"
+        },
+        {
+            "hangeul": "아끼다",
+            "eng": "grudge,spare"
+        },
+        {
+            "hangeul": "판단하다",
+            "eng": "To make a conclusion"
+        },
+        {
+            "hangeul": "실천하다",
+            "eng": "To practice,put in theory"
+        },
+        {
+            "hangeul": "익히다",
+            "eng": "Habituate oneself to"
+        },
+        {
+            "hangeul": "지배하다",
+            "eng": "Control, direct"
+        },
+        {
+            "hangeul": "매달리다",
+            "eng": "Be suspended, to be hanging down (from) ; to stick to a job, to persevere"
+        },
+        {
+            "hangeul": "빠져나가다",
+            "eng": "Get/go out of here"
+        },
+        {
+            "hangeul": "빛나다",
+            "eng": "shine,glitter"
+        },
+        {
+            "hangeul": "예상되다",
+            "eng": "To expect, anticipate"
+        },
+        {
+            "hangeul": "발휘하다",
+            "eng": "Display, exhibit"
+        },
+        {
+            "hangeul": "보도하다",
+            "eng": "To report,inform"
+        },
+        {
+            "hangeul": "운영하다",
+            "eng": "manage,administer"
+        },
+        {
+            "hangeul": "평가하다",
+            "eng": "To evaluate, estimate, judge"
+        },
+        {
+            "hangeul": "감추다",
+            "eng": "Hide or conceal"
+        },
+        {
+            "hangeul": "비우다",
+            "eng": "empty,vacate"
+        },
+        {
+            "hangeul": "설치하다",
+            "eng": "To found,establish,create"
+        },
+        {
+            "hangeul": "형성하다",
+            "eng": "To form, make, take shape"
+        },
+        {
+            "hangeul": "덧붙이다",
+            "eng": "Add a thing, append"
+        },
+        {
+            "hangeul": "타다",
+            "eng": "Burn, blaze (firewood)"
+        },
+        {
+            "hangeul": "비치다",
+            "eng": "Shine"
+        },
+        {
+            "hangeul": "실시되다",
+            "eng": "To be enforced"
+        },
+        {
+            "hangeul": "강화하다",
+            "eng": "Strengthen"
+        },
+        {
+            "hangeul": "미루다",
+            "eng": "Postpone ; (2) to guess, infer and make an educated guess"
+        },
+        {
+            "hangeul": "해당하다",
+            "eng": "To be applied/applicable under"
+        },
+        {
+            "hangeul": "비추다",
+            "eng": "(1) Shed, throw light on (2) to reflect in the mirror"
+        },
+        {
+            "hangeul": "반영하다",
+            "eng": "Reflect, be reflected"
+        },
+        {
+            "hangeul": "성장하다",
+            "eng": "To grow,be brought up"
+        },
+        {
+            "hangeul": "구입하다",
+            "eng": "Purchase or buying"
+        },
+        {
+            "hangeul": "의존하다",
+            "eng": "To depend on, rely on"
+        },
+        {
+            "hangeul": "건설하다",
+            "eng": "To construct or erect"
+        },
+        {
+            "hangeul": "비롯되다",
+            "eng": "To be begun, to have started"
+        },
+        {
+            "hangeul": "여겨지다",
+            "eng": "To look, appear, think of sth as"
+        },
+        {
+            "hangeul": "수행하다",
+            "eng": "Accomplishment"
+        },
+        {
+            "hangeul": "치다",
+            "eng": "to count, reckon, calculate"
+        },
+        {
+            "hangeul": "흔들리다",
+            "eng": "Shake, swing,rock,tremble"
+        },
+        {
+            "hangeul": "접근하다",
+            "eng": "approach,get near"
+        },
+        {
+            "hangeul": "흩어지다",
+            "eng": "Scatter about"
+        },
+        {
+            "hangeul": "대응하다",
+            "eng": "Cope or correspond to"
+        },
+        {
+            "hangeul": "이룩하다",
+            "eng": "Erect, build"
+        },
+        {
+            "hangeul": "머물다",
+            "eng": "Stay overnight"
+        },
+        {
+            "hangeul": "지원하다",
+            "eng": "To desire, aspire, hence to apply for [e.g. a job] or volunteer for sth"
+        },
+        {
+            "hangeul": "버티다",
+            "eng": "Endure, tolerate"
+        },
+        {
+            "hangeul": "분포하다",
+            "eng": "Distribution"
+        },
+        {
+            "hangeul": "다투다",
+            "eng": "Quarrel"
+        },
+        {
+            "hangeul": "앞장서다",
+            "eng": "To be in the lead/ at the head"
+        },
+        {
+            "hangeul": "요청하다",
+            "eng": "To ask for, to request"
+        },
+        {
+            "hangeul": "일치하다",
+            "eng": "Agree with, to be in accord with"
+        },
+        {
+            "hangeul": "개발되다",
+            "eng": "To be developed or exploited"
+        },
+        {
+            "hangeul": "대비하다",
+            "eng": "Provide for, prepare onself for"
+        },
+        {
+            "hangeul": "쓰러지다",
+            "eng": "Fall, collapse"
+        },
+        {
+            "hangeul": "적용되다",
+            "eng": "To be applied"
+        },
+        {
+            "hangeul": "스치다",
+            "eng": "Graze past"
+        },
+        {
+            "hangeul": "트이다",
+            "eng": "Get cleared out, open up"
+        },
+        {
+            "hangeul": "깔리다",
+            "eng": "To be spread or overspread"
+        },
+        {
+            "hangeul": "잠기다",
+            "eng": "Sink in water"
+        },
+        {
+            "hangeul": "주고받다",
+            "eng": "Give and receive, exchange"
+        },
+        {
+            "hangeul": "공개하다",
+            "eng": "Open to the public"
+        },
+        {
+            "hangeul": "전개되다",
+            "eng": "To be unfolded,spread out"
+        },
+        {
+            "hangeul": "훔치다",
+            "eng": "To steal"
+        },
+        {
+            "hangeul": "구분하다",
+            "eng": "To divide or to classify"
+        },
+        {
+            "hangeul": "굽히다",
+            "eng": "Bend or stoop"
+        },
+        {
+            "hangeul": "내다보다",
+            "eng": "Look out for"
+        },
+        {
+            "hangeul": "바로잡다",
+            "eng": "Straighten"
+        },
+        {
+            "hangeul": "박히다",
+            "eng": "Be nailed in"
+        },
+        {
+            "hangeul": "제거하다",
+            "eng": "exclusion,removal"
+        },
+        {
+            "hangeul": "박다",
+            "eng": "Drive,hammer in"
+        },
+        {
+            "hangeul": "이르다",
+            "eng": "Inform, report, tell"
+        },
+        {
+            "hangeul": "살아남다",
+            "eng": "Survive"
+        },
+        {
+            "hangeul": "잇따르다",
+            "eng": "Follow one after another"
+        },
+        {
+            "hangeul": "지시하다",
+            "eng": "To direct, instruct"
+        },
+        {
+            "hangeul": "설치되다",
+            "eng": "To be established"
+        },
+        {
+            "hangeul": "짚다",
+            "eng": "Feel, examine"
+        },
+        {
+            "hangeul": "바치다",
+            "eng": "Give, offer"
+        },
+        {
+            "hangeul": "발표되다",
+            "eng": "Be announced"
+        },
+        {
+            "hangeul": "부정하다",
+            "eng": "Be uncertain,irregular"
+        },
+        {
+            "hangeul": "불러일으키다",
+            "eng": "rouse,stir up"
+        },
+        {
+            "hangeul": "짐작하다",
+            "eng": "To guess, infer"
+        },
+        {
+            "hangeul": "택하다",
+            "eng": "Choose, select"
+        },
+        {
+            "hangeul": "기여하다",
+            "eng": "Contribute or add much to"
+        },
+        {
+            "hangeul": "숨지다",
+            "eng": "Breathe one’s last breath"
+        },
+        {
+            "hangeul": "주저앉다",
+            "eng": "Sit down, plump down"
+        },
+        {
+            "hangeul": "대신하다",
+            "eng": "Relieve, replace another"
+        },
+        {
+            "hangeul": "꺾다",
+            "eng": "Break off or snap off"
+        },
+        {
+            "hangeul": "묻히다",
+            "eng": "Get buried"
+        },
+        {
+            "hangeul": "접하다",
+            "eng": "adjoin,be adjacent to"
+        },
+        {
+            "hangeul": "쫓다",
+            "eng": "Drive away, chase off"
+        },
+        {
+            "hangeul": "확인되다",
+            "eng": "To be confirmed"
+        },
+        {
+            "hangeul": "가하다",
+            "eng": "To add"
+        },
+        {
+            "hangeul": "외면하다",
+            "eng": "Outward appearance"
+        },
+        {
+            "hangeul": "개선하다",
+            "eng": "To renovate or to improve"
+        },
+        {
+            "hangeul": "망하다",
+            "eng": "Go to ruin"
+        },
+        {
+            "hangeul": "성립되다",
+            "eng": "To be concluded, formed"
+        },
+        {
+            "hangeul": "집중되다",
+            "eng": "To concentrate"
+        },
+        {
+            "hangeul": "파다",
+            "eng": "To dig"
+        },
+        {
+            "hangeul": "해결되다",
+            "eng": "To be settled, resolved"
+        },
+        {
+            "hangeul": "감싸다",
+            "eng": "1) wrap up or tuck in 2) to protect or defend"
+        },
+        {
+            "hangeul": "깔다",
+            "eng": "to pave (a road), lay down a floor, spread a blanket etc."
+        },
+        {
+            "hangeul": "다짐하다",
+            "eng": "Pledge, vow, swear"
+        },
+        {
+            "hangeul": "생산되다",
+            "eng": "To be produced"
+        },
+        {
+            "hangeul": "숨기다",
+            "eng": "To hide"
+        },
+        {
+            "hangeul": "짜다",
+            "eng": "Form, organize"
+        },
+        {
+            "hangeul": "헤아리다",
+            "eng": "Consider, weigh, ponder, consider"
+        },
+        {
+            "hangeul": "기초하다",
+            "eng": "Make the basis for"
+        },
+        {
+            "hangeul": "말리다",
+            "eng": "Dry sth"
+        },
+        {
+            "hangeul": "보장하다",
+            "eng": "To secure,guarantee"
+        },
+        {
+            "hangeul": "사귀다",
+            "eng": "Make friends with"
+        },
+        {
+            "hangeul": "솟다",
+            "eng": "rise,soar,tower above"
+        },
+        {
+            "hangeul": "예상하다",
+            "eng": "To expect, anticipate"
+        },
+        {
+            "hangeul": "제작하다",
+            "eng": "To produce,manufacture"
+        },
+        {
+            "hangeul": "품다",
+            "eng": "To hold, embrace"
+        },
+        {
+            "hangeul": "굳어지다",
+            "eng": "Become hard"
+        },
+        {
+            "hangeul": "굶다",
+            "eng": "To starve or go hungry"
+        },
+        {
+            "hangeul": "도달하다",
+            "eng": "Arrival"
+        },
+        {
+            "hangeul": "맛보다",
+            "eng": "Taste"
+        },
+        {
+            "hangeul": "묻다",
+            "eng": "to Bury"
+        },
+        {
+            "hangeul": "증명하다",
+            "eng": "To prove,show,bear"
+        },
+        {
+            "hangeul": "지적되다",
+            "eng": "To be pointed out to"
+        },
+        {
+            "hangeul": "해석하다",
+            "eng": "To intrepret, construe"
+        },
+        {
+            "hangeul": "힘쓰다",
+            "eng": "To try really hard"
+        },
+        {
+            "hangeul": "날리다",
+            "eng": "To send flying"
+        },
+        {
+            "hangeul": "덜다",
+            "eng": "Save, lighten"
+        },
+        {
+            "hangeul": "맞이하다",
+            "eng": "Go to greet"
+        },
+        {
+            "hangeul": "신고하다",
+            "eng": "To state, declare"
+        },
+        {
+            "hangeul": "집어넣다",
+            "eng": "Put in"
+        },
+        {
+            "hangeul": "구속되다",
+            "eng": "To be arrested"
+        },
+        {
+            "hangeul": "배다",
+            "eng": "Soak into"
+        },
+        {
+            "hangeul": "빠져나오다",
+            "eng": "Come out of somewhere"
+        },
+        {
+            "hangeul": "새다",
+            "eng": "leak,escape from"
+        },
+        {
+            "hangeul": "요구되다",
+            "eng": "To be requested, claimed"
+        },
+        {
+            "hangeul": "전개하다",
+            "eng": "To unfold,evolve,spread out"
+        },
+        {
+            "hangeul": "한정되다",
+            "eng": "To be limiited, qualified"
+        },
+        {
+            "hangeul": "해내다",
+            "eng": "To accomplish, achieve, carry through"
+        },
+        {
+            "hangeul": "갚다",
+            "eng": "Pay back a loan"
+        },
+        {
+            "hangeul": "끼우다",
+            "eng": "To put between or insert"
+        },
+        {
+            "hangeul": "다듬다",
+            "eng": "Trim, shave"
+        },
+        {
+            "hangeul": "오염되다",
+            "eng": "To be polluted, contaminated"
+        },
+        {
+            "hangeul": "의지하다",
+            "eng": "To look to, depend on, rely on"
+        },
+        {
+            "hangeul": "제한하다",
+            "eng": "To restrict,limit"
+        },
+        {
+            "hangeul": "존중하다",
+            "eng": "appreciate,esteem,value"
+        },
+        {
+            "hangeul": "책임지다",
+            "eng": "Take responsibility"
+        },
+        {
+            "hangeul": "표현되다",
+            "eng": "To have been expressed"
+        },
+        {
+            "hangeul": "헤매다",
+            "eng": "Wander about, roam about"
+        },
+        {
+            "hangeul": "꽂다",
+            "eng": "Be stuck in or insert"
+        },
+        {
+            "hangeul": "망설이다",
+            "eng": "Hesitate"
+        },
+        {
+            "hangeul": "뽑히다",
+            "eng": "Be taken out, pulled out"
+        },
+        {
+            "hangeul": "앞세우다",
+            "eng": "Make a person go"
+        },
+        {
+            "hangeul": "작성하다",
+            "eng": "To edit or compose, write up"
+        },
+        {
+            "hangeul": "창조하다",
+            "eng": "Create"
+        },
+        {
+            "hangeul": "펴내다",
+            "eng": "Publish, bring out in print"
+        },
+        {
+            "hangeul": "면하다",
+            "eng": "escape,avoid"
+        },
+        {
+            "hangeul": "모색하다",
+            "eng": "Evening twilight"
+        },
+        {
+            "hangeul": "붙잡다",
+            "eng": "seize,catch"
+        },
+        {
+            "hangeul": "파괴하다",
+            "eng": "Destruction, demolition"
+        },
+        {
+            "hangeul": "해당되다",
+            "eng": "To be applied/applicable under"
+        },
+        {
+            "hangeul": "강요하다",
+            "eng": "Insist on"
+        },
+        {
+            "hangeul": "낮추다",
+            "eng": "Lower, make low"
+        },
+        {
+            "hangeul": "내주다",
+            "eng": "Take out and give away"
+        },
+        {
+            "hangeul": "물러나다",
+            "eng": "Fall off"
+        },
+        {
+            "hangeul": "적히다",
+            "eng": "To be recorded,written down"
+        },
+        {
+            "hangeul": "제한되다",
+            "eng": "To be restricted,limited"
+        },
+        {
+            "hangeul": "지속되다",
+            "eng": "Be lasting a long time, be continous"
+        },
+        {
+            "hangeul": "쫓기다",
+            "eng": "To be chased, be driven"
+        },
+        {
+            "hangeul": "평가되다",
+            "eng": "To be appraised"
+        },
+        {
+            "hangeul": "갇히다",
+            "eng": "Be confined or shut up"
+        },
+        {
+            "hangeul": "닥치다",
+            "eng": "Shut the mouth!"
+        },
+        {
+            "hangeul": "부담하다",
+            "eng": "bear,shoulder a responsibility"
+        },
+        {
+            "hangeul": "빼앗다",
+            "eng": "Snach, take away from"
+        },
+        {
+            "hangeul": "삼키다",
+            "eng": "Swallow"
+        },
+        {
+            "hangeul": "접다",
+            "eng": "Fold up"
+        },
+        {
+            "hangeul": "제시되다",
+            "eng": "To be presented"
+        },
+        {
+            "hangeul": "진출하다",
+            "eng": "Penetrate into, advance"
+        },
+        {
+            "hangeul": "통과하다",
+            "eng": "Passage through"
+        },
+        {
+            "hangeul": "확산되다",
+            "eng": "To get diffused"
+        },
+        {
+            "hangeul": "기대다",
+            "eng": "1) To rely upon or lean upon 2) lean against"
+        },
+        {
+            "hangeul": "깨어나다",
+            "eng": "Return to consciousness"
+        },
+        {
+            "hangeul": "꼽히다",
+            "eng": "To be elected"
+        },
+        {
+            "hangeul": "상징하다",
+            "eng": "Symbolize"
+        },
+        {
+            "hangeul": "실현하다",
+            "eng": "To realize,bring to fruition"
+        },
+        {
+            "hangeul": "안정되다",
+            "eng": "To be stable"
+        },
+        {
+            "hangeul": "엎드리다",
+            "eng": "Prostrate oneself, lie on the ground"
+        },
+        {
+            "hangeul": "전달되다",
+            "eng": "To be delivered"
+        },
+        {
+            "hangeul": "거절하다",
+            "eng": "Refuse or reject"
+        },
+        {
+            "hangeul": "구별하다",
+            "eng": "To distinguish between A and B"
+        },
+        {
+            "hangeul": "마주치다",
+            "eng": "Collide with"
+        },
+        {
+            "hangeul": "묘사하다",
+            "eng": "To describe"
+        },
+        {
+            "hangeul": "베다",
+            "eng": "Cut, chop"
+        },
+        {
+            "hangeul": "보장되다",
+            "eng": "Be secured"
+        },
+        {
+            "hangeul": "불리다",
+            "eng": "soak,steep"
+        },
+        {
+            "hangeul": "완성하다",
+            "eng": "To accomplish, to end successfully"
+        },
+        {
+            "hangeul": "청하다",
+            "eng": "ask,request"
+        },
+        {
+            "hangeul": "개방하다",
+            "eng": "To open or to throw open"
+        },
+        {
+            "hangeul": "관계되다",
+            "eng": "Be affected or influenced by"
+        },
+        {
+            "hangeul": "분리되다",
+            "eng": "To be segregated"
+        },
+        {
+            "hangeul": "새기다",
+            "eng": "To sculpt,engrave"
+        },
+        {
+            "hangeul": "선정하다",
+            "eng": "select,choose"
+        },
+        {
+            "hangeul": "세다",
+            "eng": "Count"
+        },
+        {
+            "hangeul": "예측하다",
+            "eng": "To predict, forecast"
+        },
+        {
+            "hangeul": "이동하다",
+            "eng": "To move,migrate,travel"
+        },
+        {
+            "hangeul": "자극하다",
+            "eng": "To stimulate"
+        },
+        {
+            "hangeul": "조절하다",
+            "eng": "To regulate,tune"
+        },
+        {
+            "hangeul": "중얼거리다",
+            "eng": "Mutter to oneself"
+        },
+        {
+            "hangeul": "지급하다",
+            "eng": "To pay,allow,furnish sth"
+        },
+        {
+            "hangeul": "긋다",
+            "eng": "1) draw or mark 2) strike"
+        },
+        {
+            "hangeul": "논하다",
+            "eng": "Argue, discuss,debate"
+        },
+        {
+            "hangeul": "보고하다",
+            "eng": "Report to a person"
+        },
+        {
+            "hangeul": "선언하다",
+            "eng": "declare,proclaim,announce"
+        },
+        {
+            "hangeul": "엿보다",
+            "eng": "Wait for an opportunity"
+        },
+        {
+            "hangeul": "완성되다",
+            "eng": "To be accomplished"
+        },
+        {
+            "hangeul": "입히다",
+            "eng": "Clothe, dress"
+        },
+        {
+            "hangeul": "잡아먹다",
+            "eng": "Slaughter and eat"
+        },
+        {
+            "hangeul": "차다",
+            "eng": "Put on, fasten,wear"
+        },
+        {
+            "hangeul": "탄생하다",
+            "eng": "To be born"
+        },
+        {
+            "hangeul": "건드리다",
+            "eng": "1) touch or jog 2) irritate or vex"
+        },
+        {
+            "hangeul": "관리하다",
+            "eng": "To manage or control or supervise or manage"
+        },
+        {
+            "hangeul": "근거하다",
+            "eng": "To base sth on sth"
+        },
+        {
+            "hangeul": "달래다",
+            "eng": "Calm down"
+        },
+        {
+            "hangeul": "말리다",
+            "eng": "Make stop"
+        },
+        {
+            "hangeul": "밝혀내다",
+            "eng": "To find out"
+        },
+        {
+            "hangeul": "부서지다",
+            "eng": "Break, be broken"
+        },
+        {
+            "hangeul": "성립하다",
+            "eng": "To exist, to come into being"
+        },
+        {
+            "hangeul": "업다",
+            "eng": "To carry on one’s back, to shoulder sth"
+        },
+        {
+            "hangeul": "주의하다",
+            "eng": "Pay attention to"
+        },
+        {
+            "hangeul": "튀다",
+            "eng": "Spring, bound, jump"
+        },
+        {
+            "hangeul": "고집하다",
+            "eng": "To be stubborn or persistent"
+        },
+        {
+            "hangeul": "구르다",
+            "eng": "Roll over"
+        },
+        {
+            "hangeul": "대처하다",
+            "eng": "Disposal, treatment"
+        },
+        {
+            "hangeul": "발길",
+            "eng": "A kick; walking pace, steps"
+        },
+        {
+            "hangeul": "빼앗기다",
+            "eng": "A thing be taken away"
+        },
+        {
+            "hangeul": "신청하다",
+            "eng": "To apply (for)"
+        },
+        {
+            "hangeul": "안기다",
+            "eng": "to be embraced by sb (in their arms)"
+        },
+        {
+            "hangeul": "제안하다",
+            "eng": "To propose,make a suggestion"
+        },
+        {
+            "hangeul": "튀어나오다",
+            "eng": "Jump out, spring out"
+        },
+        {
+            "hangeul": "감다",
+            "eng": "Wind up"
+        },
+        {
+            "hangeul": "같이하다",
+            "eng": "To do together or to share"
+        },
+        {
+            "hangeul": "비비다",
+            "eng": "rub,chafe"
+        },
+        {
+            "hangeul": "살아나다",
+            "eng": "revive,be brought back to life"
+        },
+        {
+            "hangeul": "속이다",
+            "eng": "deceive,cheat"
+        },
+        {
+            "hangeul": "지불하다",
+            "eng": "To pay"
+        },
+        {
+            "hangeul": "건네주다",
+            "eng": "To pass over or to put on the other side (of a river)"
+        },
+        {
+            "hangeul": "내려지다",
+            "eng": "To become lower"
+        },
+        {
+            "hangeul": "녹다",
+            "eng": "To melt"
+        },
+        {
+            "hangeul": "수집하다",
+            "eng": "To collect"
+        },
+        {
+            "hangeul": "가르다",
+            "eng": "1) split or divide 2) distribute or share 3) distinguish or separate"
+        },
+        {
+            "hangeul": "공격하다",
+            "eng": "To attack"
+        },
+        {
+            "hangeul": "기록되다",
+            "eng": "To be recorded or written down"
+        },
+        {
+            "hangeul": "끼어들다",
+            "eng": "Interrupt"
+        },
+        {
+            "hangeul": "도망치다",
+            "eng": "To make an escape"
+        },
+        {
+            "hangeul": "적응하다",
+            "eng": "Be suited to, adapted to"
+        },
+        {
+            "hangeul": "지나치다",
+            "eng": "Go too far, to go to extremes"
+        },
+        {
+            "hangeul": "반복되다",
+            "eng": "To be repeated"
+        },
+        {
+            "hangeul": "어찌하다",
+            "eng": "Be subject to an attack of vertigo (figuratively), to not know what the hell is going on or what to do."
+        },
+        {
+            "hangeul": "예정되다",
+            "eng": "Make a program, set a schedule"
+        },
+        {
+            "hangeul": "인정받다",
+            "eng": "To receive recognition"
+        },
+        {
+            "hangeul": "행하다",
+            "eng": "To do, act, behave"
+        },
+        {
+            "hangeul": "마음먹다",
+            "eng": "Be determined to"
+        },
+        {
+            "hangeul": "반성하다",
+            "eng": "Examine oneself"
+        },
+        {
+            "hangeul": "불어오다",
+            "eng": "Call to come"
+        },
+        {
+            "hangeul": "소유하다",
+            "eng": "To possess,hold"
+        },
+        {
+            "hangeul": "알아내다",
+            "eng": "To find out (e.g. the answer)"
+        },
+        {
+            "hangeul": "용서하다",
+            "eng": "To pardon, to forgive"
+        },
+        {
+            "hangeul": "의논하다",
+            "eng": "To consult,confer with, talk over a matter"
+        },
+        {
+            "hangeul": "타고나다",
+            "eng": "Be born, gifted/endowed with"
+        },
+        {
+            "hangeul": "허용되다",
+            "eng": "To be permitted, approved"
+        },
+        {
+            "hangeul": "나르다",
+            "eng": "to move a long or semi-long distance (not just within a room); Carry, convey, transport"
+        },
+        {
+            "hangeul": "놀리다",
+            "eng": "Banter, tease"
+        },
+        {
+            "hangeul": "늘어놓다",
+            "eng": "(1) Scatter about haphazardly ; (2) 으로 늘어놓다 to arrange, place in order"
+        },
+        {
+            "hangeul": "대표하다",
+            "eng": "Represent"
+        },
+        {
+            "hangeul": "맡다",
+            "eng": "Smell"
+        },
+        {
+            "hangeul": "밀리다",
+            "eng": "to be left undone, to be late in making a payment (to fall into arrears) (2) to be pushed, shoved"
+        },
+        {
+            "hangeul": "부러지다",
+            "eng": "Break, get broken"
+        },
+        {
+            "hangeul": "쓸다",
+            "eng": "brush, sweep perhaps lightly"
+        },
+        {
+            "hangeul": "예방하다",
+            "eng": "To protect, prevent, fend off"
+        },
+        {
+            "hangeul": "유의하다",
+            "eng": "To bear in mind, be heedful of"
+        },
+        {
+            "hangeul": "이해되다",
+            "eng": "To be understood"
+        },
+        {
+            "hangeul": "잘리다",
+            "eng": "Be snapped,broken,cut off"
+        },
+        {
+            "hangeul": "전환하다",
+            "eng": "To exchange, to convert, to change over"
+        },
+        {
+            "hangeul": "토하다",
+            "eng": "To vomit"
+        },
+        {
+            "hangeul": "감소하다",
+            "eng": "To reduce or diminish"
+        },
+        {
+            "hangeul": "괴롭히다",
+            "eng": "Afflict or worry"
+        },
+        {
+            "hangeul": "깨우다",
+            "eng": "To wake up or awaken"
+        },
+        {
+            "hangeul": "끊기다",
+            "eng": "To be cut off or severed"
+        },
+        {
+            "hangeul": "보도되다",
+            "eng": "To be reported"
+        },
+        {
+            "hangeul": "성숙하다",
+            "eng": "to ripen, to mature"
+        },
+        {
+            "hangeul": "손질하다",
+            "eng": "Handle with care"
+        },
+        {
+            "hangeul": "인정되다",
+            "eng": "To be recognized"
+        },
+        {
+            "hangeul": "중단하다",
+            "eng": "To interrupt, to stop"
+        },
+        {
+            "hangeul": "가로막다",
+            "eng": "Interrupt or obstruct"
+        },
+        {
+            "hangeul": "교환하다",
+            "eng": "To exchange"
+        },
+        {
+            "hangeul": "내버리다",
+            "eng": "Throw away"
+        },
+        {
+            "hangeul": "보호되다",
+            "eng": "To be protected"
+        },
+        {
+            "hangeul": "설명되다",
+            "eng": "To be explained"
+        },
+        {
+            "hangeul": "위로하다",
+            "eng": "To console, soothe somebody"
+        },
+        {
+            "hangeul": "찢어지다",
+            "eng": "To be torn, rent"
+        },
+        {
+            "hangeul": "흘러내리다",
+            "eng": "Run (stream,pour) down"
+        },
+        {
+            "hangeul": "나아지다",
+            "eng": "Become better, be improved"
+        },
+        {
+            "hangeul": "넘어오다",
+            "eng": "Fall, come down"
+        },
+        {
+            "hangeul": "버려지다",
+            "eng": "Take away, throw away to somewhere"
+        },
+        {
+            "hangeul": "설득하다",
+            "eng": "Persuasion"
+        },
+        {
+            "hangeul": "전망하다",
+            "eng": "Have a view of, observe"
+        },
+        {
+            "hangeul": "개선되다",
+            "eng": "To be renovated or to get improved"
+        },
+        {
+            "hangeul": "건네다",
+            "eng": "Speak to a person or address"
+        },
+        {
+            "hangeul": "구속하다",
+            "eng": "To arrest or restrain"
+        },
+        {
+            "hangeul": "긁다",
+            "eng": "Scratch or scrape"
+        },
+        {
+            "hangeul": "내쉬다",
+            "eng": "Exhale"
+        },
+        {
+            "hangeul": "늘어지다",
+            "eng": "Be lengthened"
+        },
+        {
+            "hangeul": "몰려들다",
+            "eng": "Be driven into"
+        },
+        {
+            "hangeul": "뱉다",
+            "eng": "Spit"
+        },
+        {
+            "hangeul": "벌어지다",
+            "eng": "Widen, get wider"
+        },
+        {
+            "hangeul": "안기다",
+            "eng": "(1) To fix on a person, lay the blame on a person (2) to throw onto sb, to pass onto sb, to pawn off onto sb, to hand over to sb"
+        },
+        {
+            "hangeul": "어기다",
+            "eng": "Run counter to, go against"
+        },
+        {
+            "hangeul": "요약하다",
+            "eng": "summary,condense,abridge"
+        },
+        {
+            "hangeul": "제외되다",
+            "eng": "To be excluded"
+        },
+        {
+            "hangeul": "찍히다",
+            "eng": "Get sealed, stamped"
+        },
+        {
+            "hangeul": "나뉘다",
+            "eng": "Divide"
+        },
+        {
+            "hangeul": "늘어서다",
+            "eng": "Stand in a row"
+        },
+        {
+            "hangeul": "달려들다",
+            "eng": "Run, rush, jump at"
+        },
+        {
+            "hangeul": "묶이다",
+            "eng": "Be fastened together"
+        },
+        {
+            "hangeul": "방해하다",
+            "eng": "Interrupt, interfere"
+        },
+        {
+            "hangeul": "선호하다",
+            "eng": "To prefer"
+        },
+        {
+            "hangeul": "실현되다",
+            "eng": "To realize,bring to fruition"
+        },
+        {
+            "hangeul": "오르내리다",
+            "eng": "Go up and down, rise and fall"
+        },
+        {
+            "hangeul": "전공하다",
+            "eng": "To major in something"
+        },
+        {
+            "hangeul": "금하다",
+            "eng": "1) suppress or restraint 2) abstain from or restrain from"
+        },
+        {
+            "hangeul": "기대되다",
+            "eng": "To be expected"
+        },
+        {
+            "hangeul": "넘어뜨리다",
+            "eng": "Throw down"
+        },
+        {
+            "hangeul": "농사짓다",
+            "eng": "To do farming"
+        },
+        {
+            "hangeul": "망치다",
+            "eng": "Ruin"
+        },
+        {
+            "hangeul": "묻히다",
+            "eng": "Have smeared,be covered with"
+        },
+        {
+            "hangeul": "발전되다",
+            "eng": "Be advanced, prospering"
+        },
+        {
+            "hangeul": "방지하다",
+            "eng": "To prevent, check"
+        },
+        {
+            "hangeul": "삼가다",
+            "eng": "Be discreet,take care of ; to abstain (refrain) o.s. from doing"
+        },
+        {
+            "hangeul": "앉히다",
+            "eng": "To place a person in a set"
+        },
+        {
+            "hangeul": "종합하다",
+            "eng": "synthesize,integrate"
+        },
+        {
+            "hangeul": "짜다",
+            "eng": "Squeeze, press out"
+        },
+        {
+            "hangeul": "기다",
+            "eng": "Crawl or creep"
+        },
+        {
+            "hangeul": "지다",
+            "eng": "To fade away, come off"
+        },
+        {
+            "hangeul": "가입하다",
+            "eng": "Join"
+        },
+        {
+            "hangeul": "구분되다",
+            "eng": "To be put into sections"
+        },
+        {
+            "hangeul": "꾸리다",
+            "eng": "Pack up or bundle up"
+        },
+        {
+            "hangeul": "덮이다",
+            "eng": "Be covered"
+        },
+        {
+            "hangeul": "보살피다",
+            "eng": "Take care of"
+        },
+        {
+            "hangeul": "보완하다",
+            "eng": "to supplement and make complete, to complement sth"
+        },
+        {
+            "hangeul": "보존하다",
+            "eng": "preserve,conserve"
+        },
+        {
+            "hangeul": "빨다",
+            "eng": "sip,suck"
+        },
+        {
+            "hangeul": "빼놓다",
+            "eng": "exclude,leave out"
+        },
+        {
+            "hangeul": "설립하다",
+            "eng": "found,establish"
+        },
+        {
+            "hangeul": "쓰다듬다",
+            "eng": "Stroke one’s beard"
+        },
+        {
+            "hangeul": "알아주다",
+            "eng": "acknowledge,recognize, appreciate"
+        },
+        {
+            "hangeul": "유발하다",
+            "eng": "To induce, bring about, cause"
+        },
+        {
+            "hangeul": "유지되다",
+            "eng": "To be maintained, preserved"
+        },
+        {
+            "hangeul": "잡아당기다",
+            "eng": "Pull"
+        },
+        {
+            "hangeul": "존경하다",
+            "eng": "Respect"
+        },
+        {
+            "hangeul": "체험하다",
+            "eng": "To experience, to undergo"
+        },
+        {
+            "hangeul": "칭찬하다",
+            "eng": "To praise somebody"
+        },
+        {
+            "hangeul": "통일하다",
+            "eng": "To unify, consolidate"
+        },
+        {
+            "hangeul": "걷다",
+            "eng": "1) Roll back /up one’s sleeves 2)fold or furl up 3) finish work"
+        },
+        {
+            "hangeul": "나누어지다",
+            "eng": "To become divided"
+        },
+        {
+            "hangeul": "넘겨주다",
+            "eng": "Hand over"
+        },
+        {
+            "hangeul": "다가서다",
+            "eng": "Step up, go near to, come closer"
+        },
+        {
+            "hangeul": "대기하다",
+            "eng": "Be ready for the opportunity"
+        },
+        {
+            "hangeul": "분리하다",
+            "eng": "To separate, break away from"
+        },
+        {
+            "hangeul": "붙들다",
+            "eng": "catch,seize,grasp"
+        },
+        {
+            "hangeul": "사들이다",
+            "eng": "buy,purchase"
+        },
+        {
+            "hangeul": "실망하다",
+            "eng": "To disappoint"
+        },
+        {
+            "hangeul": "약해지다",
+            "eng": "To become weak"
+        },
+        {
+            "hangeul": "연출하다",
+            "eng": "Produce, present (a play)"
+        },
+        {
+            "hangeul": "열중하다",
+            "eng": "Enthusiasm, zeal"
+        },
+        {
+            "hangeul": "조르다",
+            "eng": "To tease, urge sb"
+        },
+        {
+            "hangeul": "쫓겨나다",
+            "eng": "Chase away ; to fire from your job"
+        },
+        {
+            "hangeul": "찢다",
+            "eng": "Tear, rend, split"
+        },
+        {
+            "hangeul": "칠하다",
+            "eng": "Paint, coat"
+        },
+        {
+            "hangeul": "타오르다",
+            "eng": "Blaze, light up"
+        },
+        {
+            "hangeul": "한하다",
+            "eng": "Limit, restrict"
+        },
+        {
+            "hangeul": "해소하다",
+            "eng": "To be dissolved, disorganized"
+        },
+        {
+            "hangeul": "허락하다",
+            "eng": "Consent, agree to"
+        },
+        {
+            "hangeul": "확립하다",
+            "eng": "establish,settle,fix"
+        },
+        {
+            "hangeul": "확신하다",
+            "eng": "To be confident of"
+        },
+        {
+            "hangeul": "흥분하다",
+            "eng": "be/grow excited"
+        },
+        {
+            "hangeul": "거들다",
+            "eng": "Help or assist or lend"
+        },
+        {
+            "hangeul": "급증하다",
+            "eng": "Surge or sudden rapid increase"
+        },
+        {
+            "hangeul": "낮아지다",
+            "eng": "Become lower"
+        },
+        {
+            "hangeul": "먹고살다",
+            "eng": "Make one’s living"
+        },
+        {
+            "hangeul": "멎다",
+            "eng": "Stop"
+        },
+        {
+            "hangeul": "발달되다",
+            "eng": "Be developed"
+        },
+        {
+            "hangeul": "부딪히다",
+            "eng": "Be bumped into"
+        },
+        {
+            "hangeul": "뿌리치다",
+            "eng": "Shake off, refuse"
+        },
+        {
+            "hangeul": "중단되다",
+            "eng": "To be suspended,stopped"
+        },
+        {
+            "hangeul": "중요시하다",
+            "eng": "Attach great importance to"
+        },
+        {
+            "hangeul": "진단하다",
+            "eng": "To diagnose"
+        },
+        {
+            "hangeul": "타다",
+            "eng": "Get, receive, take your share of the money (회사에서 월급을 타다)"
+        },
+        {
+            "hangeul": "금지되다",
+            "eng": "To be forbidden or prohibited"
+        },
+        {
+            "hangeul": "기도하다",
+            "eng": "To pray"
+        },
+        {
+            "hangeul": "깨뜨리다",
+            "eng": "To break or crush"
+        },
+        {
+            "hangeul": "변화되다",
+            "eng": "To be changed"
+        },
+        {
+            "hangeul": "소요되다",
+            "eng": "Be needed"
+        },
+        {
+            "hangeul": "소화하다",
+            "eng": "To digest"
+        },
+        {
+            "hangeul": "시집가다",
+            "eng": "To take a husband"
+        },
+        {
+            "hangeul": "씌우다",
+            "eng": "Put a hat on somebody"
+        },
+        {
+            "hangeul": "엇갈리다",
+            "eng": "Cross, miss eachother"
+        },
+        {
+            "hangeul": "제의하다",
+            "eng": "Make a suggestion"
+        },
+        {
+            "hangeul": "조화되다",
+            "eng": "harmony,agreement"
+        },
+        {
+            "hangeul": "착각하다",
+            "eng": "To misunderstand, to deceive oneself, to be having illucinations"
+        },
+        {
+            "hangeul": "개방되다",
+            "eng": "To be opened"
+        },
+        {
+            "hangeul": "경고하다",
+            "eng": "To warn"
+        },
+        {
+            "hangeul": "구별되다",
+            "eng": "To be separated andistinguished"
+        },
+        {
+            "hangeul": "굳히다",
+            "eng": "Harden or make hard"
+        },
+        {
+            "hangeul": "기울다",
+            "eng": "To tilt or lean"
+        },
+        {
+            "hangeul": "끌리다",
+            "eng": "To be drawn or pulled or dragged"
+        },
+        {
+            "hangeul": "내보내다",
+            "eng": "Let out, let go out"
+        },
+        {
+            "hangeul": "미끄러지다",
+            "eng": "Slippery"
+        },
+        {
+            "hangeul": "붙잡히다",
+            "eng": "Be caught"
+        },
+        {
+            "hangeul": "울리다",
+            "eng": "To make (a baby) cry"
+        },
+        {
+            "hangeul": "초청하다",
+            "eng": "To invite"
+        },
+        {
+            "hangeul": "출현하다",
+            "eng": "Appearance, turning out"
+        },
+        {
+            "hangeul": "탈출하다",
+            "eng": "To escape, get away from"
+        },
+        {
+            "hangeul": "건설되다",
+            "eng": "To become constructed"
+        },
+        {
+            "hangeul": "기술하다",
+            "eng": "To describe or give an account of"
+        },
+        {
+            "hangeul": "납득하다",
+            "eng": "To convince, persuade oneself"
+        },
+        {
+            "hangeul": "모여들다",
+            "eng": "gather,flock"
+        },
+        {
+            "hangeul": "묵다",
+            "eng": "Get old"
+        },
+        {
+            "hangeul": "비웃다",
+            "eng": "Laugh at, ridicule"
+        },
+        {
+            "hangeul": "속삭이다",
+            "eng": "Whisper"
+        },
+        {
+            "hangeul": "예고하다",
+            "eng": "Warn, give advance notice"
+        },
+        {
+            "hangeul": "위반하다",
+            "eng": "To violate (the law)"
+        },
+        {
+            "hangeul": "익히다",
+            "eng": "cook,boil"
+        },
+        {
+            "hangeul": "조정하다",
+            "eng": "To regulate,adjust,coordinate"
+        },
+        {
+            "hangeul": "활발해지다",
+            "eng": "To become lively"
+        },
+        {
+            "hangeul": "회복되다",
+            "eng": "To be recovered"
+        },
+        {
+            "hangeul": "희생하다",
+            "eng": "To sacrifice"
+        },
+        {
+            "hangeul": "가능해지다",
+            "eng": "To become possible"
+        },
+        {
+            "hangeul": "끌어당기다",
+            "eng": "To draw near"
+        },
+        {
+            "hangeul": "몰려오다",
+            "eng": "Come in crowds"
+        },
+        {
+            "hangeul": "믿어지다",
+            "eng": "Become believable"
+        },
+        {
+            "hangeul": "빠뜨리다",
+            "eng": "Throw into (a river); entice, entrap"
+        },
+        {
+            "hangeul": "승리하다",
+            "eng": "To win"
+        },
+        {
+            "hangeul": "얻어먹다",
+            "eng": "Go about begging"
+        },
+        {
+            "hangeul": "연상하다",
+            "eng": "Association of ideas"
+        },
+        {
+            "hangeul": "올려다보다",
+            "eng": "Look up"
+        },
+        {
+            "hangeul": "외다",
+            "eng": "To repeat back (an order)"
+        },
+        {
+            "hangeul": "재다",
+            "eng": "measure,guage"
+        },
+        {
+            "hangeul": "지도하다",
+            "eng": "To lead, instruct"
+        },
+        {
+            "hangeul": "찾아다니다",
+            "eng": "To go around to meet somebody or see places"
+        },
+        {
+            "hangeul": "푸다",
+            "eng": "Dip out, bail out"
+        },
+        {
+            "hangeul": "놔두다",
+            "eng": "Leave as it is, let it be"
+        },
+        {
+            "hangeul": "늦어지다",
+            "eng": "To become late"
+        },
+        {
+            "hangeul": "사망하다",
+            "eng": "To decease,pass away"
+        },
+        {
+            "hangeul": "잊혀지다",
+            "eng": "To become forgotten"
+        },
+        {
+            "hangeul": "정리되다",
+            "eng": "To be adjusted"
+        },
+        {
+            "hangeul": "토론하다",
+            "eng": "To debate, discuss"
+        },
+        {
+            "hangeul": "합하다",
+            "eng": "Harmonize with, be in accord with"
+        },
+        {
+            "hangeul": "길어지다",
+            "eng": "To become long"
+        },
+        {
+            "hangeul": "놓아두다",
+            "eng": "Leave as it is, let it be"
+        },
+        {
+            "hangeul": "대접하다",
+            "eng": "Treatment"
+        },
+        {
+            "hangeul": "입력하다",
+            "eng": "To input (data into the computer)"
+        },
+        {
+            "hangeul": "타다",
+            "eng": "Put in, mix, dissolve"
+        },
+        {
+            "hangeul": "함께하다",
+            "eng": "To do it together, with somebody"
+        },
+        {
+            "hangeul": "합격하다",
+            "eng": "To pass an exam"
+        },
+        {
+            "hangeul": "공통되다",
+            "eng": "To be common"
+        },
+        {
+            "hangeul": "녹이다",
+            "eng": "Melt, dissolve"
+        },
+        {
+            "hangeul": "어려워지다",
+            "eng": "To become difficult"
+        },
+        {
+            "hangeul": "올라서다",
+            "eng": "Stand up"
+        },
+        {
+            "hangeul": "저러다",
+            "eng": "Like that"
+        },
+        {
+            "hangeul": "환영하다",
+            "eng": "To welcome"
+        },
+        {
+            "hangeul": "경영하다",
+            "eng": "To manage or adminster"
+        },
+        {
+            "hangeul": "기념하다",
+            "eng": "Commemorate"
+        },
+        {
+            "hangeul": "독립하다",
+            "eng": "To become independent"
+        },
+        {
+            "hangeul": "방송하다",
+            "eng": "Broadcast"
+        },
+        {
+            "hangeul": "보충하다",
+            "eng": "replenish,replace,fillup"
+        },
+        {
+            "hangeul": "붐비다",
+            "eng": "Be congested,crowded ; to be full of"
+        },
+        {
+            "hangeul": "임신하다",
+            "eng": "To be pregnant"
+        },
+        {
+            "hangeul": "잠그다",
+            "eng": "To lock"
+        },
+        {
+            "hangeul": "튀기다",
+            "eng": "To fry; splash, splatter"
+        },
+        {
+            "hangeul": "흐리다",
+            "eng": "Be muddy, cloudy ; with a tint of"
+        },
+        {
+            "hangeul": "문제되다",
+            "eng": "Become a problem"
+        },
+        {
+            "hangeul": "새우다",
+            "eng": "Sit up all night"
+        },
+        {
+            "hangeul": "서명하다",
+            "eng": "To sign"
+        },
+        {
+            "hangeul": "치다",
+            "eng": "(a storm, strong wind, rain, lightning) to strike, hit"
+        },
+        {
+            "hangeul": "가만있다",
+            "eng": "Remain still or motionless"
+        },
+        {
+            "hangeul": "귀가하다",
+            "eng": "To return home"
+        },
+        {
+            "hangeul": "날아다니다",
+            "eng": "Fly about"
+        },
+        {
+            "hangeul": "반짝이다",
+            "eng": "Shine, glitter"
+        },
+        {
+            "hangeul": "뺏다",
+            "eng": "Straight"
+        },
+        {
+            "hangeul": "찌다",
+            "eng": "chop,hack"
+        },
+        {
+            "hangeul": "그리워하다",
+            "eng": "Yearn or be attached to"
+        },
+        {
+            "hangeul": "봉사하다",
+            "eng": "serve,render service"
+        },
+        {
+            "hangeul": "전시하다",
+            "eng": "To display"
+        },
+        {
+            "hangeul": "묵다",
+            "eng": "Stay overnight s.w."
+        },
+        {
+            "hangeul": "보내오다",
+            "eng": "받다 receive"
+        },
+        {
+            "hangeul": "제대하다",
+            "eng": "Be discharged from the military"
+        },
+        {
+            "hangeul": "걷다",
+            "eng": "Walk on or tread on"
+        },
+        {
+            "hangeul": "겁나다",
+            "eng": "Be frightened or scared"
+        },
+        {
+            "hangeul": "눈감다",
+            "eng": "Close the eyes"
+        },
+        {
+            "hangeul": "눈뜨다",
+            "eng": "Open one’s eyes"
+        },
+        {
+            "hangeul": "모집하다",
+            "eng": "Call/appeal for"
+        },
+        {
+            "hangeul": "수입되다",
+            "eng": "To be imported"
+        },
+        {
+            "hangeul": "좁히다",
+            "eng": "Make narrow,restrict"
+        },
+        {
+            "hangeul": "지워지다",
+            "eng": "To be erased"
+        },
+        {
+            "hangeul": "찬성하다",
+            "eng": "To approve, support (a plan)"
+        },
+        {
+            "hangeul": "친해지다",
+            "eng": "To get close, to get friendly"
+        },
+        {
+            "hangeul": "개다",
+            "eng": "To clear up or become clear (weather)"
+        },
+        {
+            "hangeul": "깨어지다",
+            "eng": "To waken"
+        },
+        {
+            "hangeul": "되돌아보다",
+            "eng": "To look back on"
+        },
+        {
+            "hangeul": "반기다",
+            "eng": "Rejoice, be glad of"
+        },
+        {
+            "hangeul": "붓다",
+            "eng": "to be swollen"
+        },
+        {
+            "hangeul": "연기하다",
+            "eng": "To be put off, postponed"
+        },
+        {
+            "hangeul": "응답하다",
+            "eng": "An answer, a reply"
+        },
+        {
+            "hangeul": "참고하다",
+            "eng": "To refer, consult"
+        },
+        {
+            "hangeul": "추천하다",
+            "eng": "To recommend, say a good word for"
+        },
+        {
+            "hangeul": "판매되다",
+            "eng": "To be sold"
+        },
+        {
+            "hangeul": "한정하다",
+            "eng": "To limit, restrict"
+        },
+        {
+            "hangeul": "향상되다",
+            "eng": "To be impoved, advanced"
+        },
+        {
+            "hangeul": "떠나오다",
+            "eng": "미국으로부터 to come back from the US"
+        },
+        {
+            "hangeul": "시들다",
+            "eng": "To wither,die,fade"
+        },
+        {
+            "hangeul": "표시하다",
+            "eng": "To make a sign, display"
+        },
+        {
+            "hangeul": "효도하다",
+            "eng": "To be a good son/daughter to one’s parents"
+        },
+        {
+            "hangeul": "긴장되다",
+            "eng": "Be under tension"
+        },
+        {
+            "hangeul": "깨끗해지다",
+            "eng": "Become clean"
+        },
+        {
+            "hangeul": "더러워지다",
+            "eng": "Get dirty"
+        },
+        {
+            "hangeul": "데우다",
+            "eng": "to warm, to heat up"
+        },
+        {
+            "hangeul": "밝아지다",
+            "eng": "Become bright"
+        },
+        {
+            "hangeul": "분명해지다",
+            "eng": "To become clear"
+        },
+        {
+            "hangeul": "심각해지다",
+            "eng": "To become serious"
+        },
+        {
+            "hangeul": "씻기다",
+            "eng": "To be carried away, washed away"
+        },
+        {
+            "hangeul": "안심하다",
+            "eng": "security,assuredness,relief"
+        },
+        {
+            "hangeul": "연기되다",
+            "eng": "To be put off, postponed"
+        },
+        {
+            "hangeul": "올라타다",
+            "eng": "Board (a plane), get into"
+        },
+        {
+            "hangeul": "잡수다",
+            "eng": "eat,drink"
+        },
+        {
+            "hangeul": "집중하다",
+            "eng": "To concentrate"
+        },
+        {
+            "hangeul": "충돌하다",
+            "eng": "Collide, clash with"
+        },
+        {
+            "hangeul": "감소되다",
+            "eng": "To be reduced or diminished"
+        },
+        {
+            "hangeul": "공연되다",
+            "eng": "To give a public performance"
+        },
+        {
+            "hangeul": "괴로워하다",
+            "eng": "To distress or trouble"
+        },
+        {
+            "hangeul": "까먹다",
+            "eng": "Crack or peel and eat"
+        },
+        {
+            "hangeul": "꾸다",
+            "eng": "Dream or have a dream"
+        },
+        {
+            "hangeul": "다양해지다",
+            "eng": "To be various"
+        },
+        {
+            "hangeul": "반짝거리다",
+            "eng": "Twinkle-twinkle (stars)"
+        },
+        {
+            "hangeul": "밤새우다",
+            "eng": "Sit up all night"
+        },
+        {
+            "hangeul": "손잡다",
+            "eng": "Take a person by the hand"
+        },
+        {
+            "hangeul": "욕하다",
+            "eng": "To insult, to say bad words"
+        },
+        {
+            "hangeul": "자살하다",
+            "eng": "Commit suicide"
+        },
+        {
+            "hangeul": "지우다",
+            "eng": "Put a thing on a person’s back"
+        },
+        {
+            "hangeul": "혼나다",
+            "eng": "Get frightened, scared"
+        },
+        {
+            "hangeul": "기억되다",
+            "eng": "To be remembered"
+        },
+        {
+            "hangeul": "까다",
+            "eng": "Peel or husk"
+        },
+        {
+            "hangeul": "달다",
+            "eng": "To hang"
+        },
+        {
+            "hangeul": "먹다",
+            "eng": "Go deaf"
+        },
+        {
+            "hangeul": "번역하다",
+            "eng": "To translate"
+        },
+        {
+            "hangeul": "비기다",
+            "eng": "End in a tie, to be even-even. Same as 무승부를 기록하다"
+        },
+        {
+            "hangeul": "소비하다",
+            "eng": "Consumption"
+        },
+        {
+            "hangeul": "수리하다",
+            "eng": "repair,mending"
+        },
+        {
+            "hangeul": "식히다",
+            "eng": "To cool, let cool. 차게 하다"
+        },
+        {
+            "hangeul": "씻기다",
+            "eng": "wash,be washed"
+        },
+        {
+            "hangeul": "얼리다",
+            "eng": "Freeze, make ice"
+        },
+        {
+            "hangeul": "입사하다",
+            "eng": "To join/enter a company"
+        },
+        {
+            "hangeul": "재우다",
+            "eng": "Put to sleep"
+        },
+        {
+            "hangeul": "전시되다",
+            "eng": "To be exhibited,ddisplayed"
+        },
+        {
+            "hangeul": "졸리다",
+            "eng": "Feel sleepy,drowsy"
+        },
+        {
+            "hangeul": "쩔쩔매다",
+            "eng": "To be at a loss, be confused"
+        },
+        {
+            "hangeul": "추가되다",
+            "eng": "To be added"
+        },
+        {
+            "hangeul": "풀어지다",
+            "eng": "To get loose; to turn soft (noodles)"
+        },
+        {
+            "hangeul": "흐려지다",
+            "eng": "Get cloudy, overcast"
+        },
+        {
+            "hangeul": "희망하다",
+            "eng": "Hope"
+        },
+        {
+            "hangeul": "힘들어하다",
+            "eng": "To be exacting, tolling"
+        },
+        {
+            "hangeul": "강의하다",
+            "eng": "To give a lecture"
+        },
+        {
+            "hangeul": "공연하다",
+            "eng": "Offer a performance"
+        },
+        {
+            "hangeul": "추가하다",
+            "eng": "To add sth, to supplement"
+        },
+        {
+            "hangeul": "퇴원하다",
+            "eng": "To leave the hospital"
+        },
+        {
+            "hangeul": "예약하다",
+            "eng": "To book in advance, pledge"
+        },
+        {
+            "hangeul": "결석하다",
+            "eng": "To be absent"
+        },
+        {
+            "hangeul": "예습하다",
+            "eng": "To prepare lessons, rehearse"
+        },
+        {
+            "hangeul": "출석하다",
+            "eng": "attendance,presence"
+        },
+        {
+            "hangeul": "지적하다",
+            "eng": "To indicate, point out"
+        }
+    ]
+}
