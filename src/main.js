@@ -30,7 +30,11 @@ import {
 
 import { conjugator_functions } from "./conjugation/conjugator.js";
 
-const APP_VERSION = "1.0.0";
+/* x.y.z.
+increments in z are stable and mean bug fixes.
+increments in y are stable and mean new features.
+increments in x are stable, major release without 100% backward compatibility. */
+const APP_VERSION = "1.0.1";
 
 
 const isTouch = "ontouchstart" in window || navigator.msMaxTouchPoints > 0;
