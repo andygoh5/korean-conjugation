@@ -50,6 +50,20 @@ export const getDefaultSettings = () => {
 		settings[input.name] = false;
 	}
 
+	settings["past-declarative"] = false;
+	const pastDeclaratives = document.querySelectorAll('[id*="past-declarative"]');
+	for (const input of Array.from(pastDeclaratives)) {
+		settings[input.name] = false;
+	}
+
+	settings["future-declarative"] = false;
+	const futureDeclaratives = document.querySelectorAll('[id*="future-declarative"]');
+	for (const input of Array.from(futureDeclaratives)) {
+		settings[input.name] = false;
+	}
+
+	settings["verb_present_declarative_formal_impolite"] = false;
+
 	// Set input radio values
 	settings["translationTiming"] = CONDITIONAL_UI_TIMINGS.always;
 	settings["furiganaTiming"] = CONDITIONAL_UI_TIMINGS.always;
